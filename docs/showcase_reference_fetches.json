@@ -1,0 +1,42 @@
+[
+  {
+    "project": "openpi",
+    "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/main/README.md",
+    "sha256": "567fc57766bd736664f50126cab8145af4071ca16cc5e238f2b11e369169c3b5",
+    "bytes": 23254,
+    "video_tags": 0,
+    "img_tags": 0
+  },
+  {
+    "project": "OpenVLA",
+    "url": "https://openvla.github.io/",
+    "sha256": "fc8d7c59138ef1d5b668e12986d7b94d247b0ecf21e04063a2a65846b2aa824c",
+    "bytes": 50363,
+    "video_tags": 55,
+    "img_tags": 11
+  },
+  {
+    "project": "Octo",
+    "url": "https://octo-models.github.io/",
+    "sha256": "4f23c47e37533137b1e3845afd57bbbd74ed37865f3fce0699ca673a8cde0b6b",
+    "bytes": 18294,
+    "video_tags": 0,
+    "img_tags": 21
+  },
+  {
+    "project": "MimicGen",
+    "url": "https://mimicgen.github.io/",
+    "sha256": "4e8c808f57ad11a4eda2e42dd5ab94cbf964d731da1519ce69a7e8e04a7b2763",
+    "bytes": 69364,
+    "video_tags": 104,
+    "img_tags": 1
+  },
+  {
+    "project": "ManiSkill",
+    "url": "https://raw.githubusercontent.com/mani-skill/ManiSkill/main/README.md",
+    "sha256": "304da9c2fdf69bf8944e1293a5c1bf146c434b2e6acd7604a46b3cfbfdfac10f",
+    "bytes": 7010,
+    "video_tags": 0,
+    "img_tags": 0
+  }
+]

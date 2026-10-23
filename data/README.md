@@ -22,6 +22,8 @@ The final perception scorer includes shared setup in its contact window. One G1 
 
 The numerical release and four images are small enough for ordinary Git. No Hugging Face dataset is needed for these artifacts. Full SFT assets were approximately6.55GB; the separate32-layout raw-state experiment approximately3.95GB. Those are **different datasets**, with models/meshes, access terms, native image dependencies and mixed review labels. They are not silently concatenated or uploaded.
 
+The visual site adds3 small, compressed own historical videos (approximately1MB combined), with complete source timelines at4×. All three retain their original reward labels and pending physical-review status; they are not new controlled-study evidence. Video/frame source identities are in `site/assets/video_manifest.json`. These do not change the sample counts in the numeric release.
+
 Raw dynamics states, full native trajectories, videos, model binaries and checkpoints are **not public in this release**. This restricts external physical replay and re-verification. A future Hugging Face release needs an explicit asset/license inventory, source/parent dependency closure, documented partitions and a clear mixed-quality label policy. We make no claim that these prerequisites have already been completed.
 
 ## Privacy, transformations and licenses

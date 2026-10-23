@@ -4,6 +4,21 @@
 
 This is a research artifact, not the official Guava repository, a new manipulation algorithm, a validated real-robot controller, or a reproduction of the official Panda performance. No paid API calls are needed to inspect or reproduce the released tables.
 
+## Visual results / 网页展示
+
+### [▶ 打开结果网页：视频、图像诊断与交互对照](https://cjgogo27.github.io/Guava-on-Piper/)
+
+<a href="https://cjgogo27.github.io/Guava-on-Piper/#videos"><img src="site/assets/can_success_poster.jpg" width="640" alt="Piper历史罐子入箱录像预览，点击查看视频"></a>
+
+**Own historical simulation footage, not generated motion.** The site includes complete source recordings at4× playback: can-in-bin original-reward success, can-in-bin failure and tray failure. These are different-seed historical illustrations, **not paired repair comparisons or samples from the paper's controlled cohorts**. Physical review for all three remains pending. [Media/source manifest](site/assets/video_manifest.json).
+
+| 原判据成功：罐子入箱 | 原判据未完成：罐子入箱 | 原判据未完成：托盘取方块 |
+|---|---|---|
+| [![Can reward success](site/assets/can_success_poster.jpg)](https://cjgogo27.github.io/Guava-on-Piper/#videos) | [![Can not complete](site/assets/can_failure_poster.jpg)](https://cjgogo27.github.io/Guava-on-Piper/#videos) | [![Tray not complete](site/assets/tray_failure_poster.jpg)](https://cjgogo27.github.io/Guava-on-Piper/#videos) |
+| [MP4](site/assets/can_success.mp4) ·4× | [MP4](site/assets/can_failure.mp4) ·4× | [MP4](site/assets/tray_failure.mp4) ·4× |
+
+The presentation structure was informed by [five established robotics projects](docs/SHOWCASE_REFERENCES.md): openpi, OpenVLA, Octo, MimicGen and ManiSkill. Their media/branding are not copied.
+
 ## What is here
 
 | Component | Entry point | Scope |
@@ -31,6 +46,16 @@ These are **different experiments with different units**, not one pooled success
 | Held-object verification | 32 layouts +4 diagnostic repeats | Aperture TP25/FP3; visual+aperture TP14/FP3 | Fixed AND fusion adds no false-positive correction and loses11 held positives |
 
 “Qualified” in local diagnostics requires sampled hold plus a whole-sequence contact proxy. It is **not full-task success** or a real-robot safety certificate. The 2mm contact limit is an engineering threshold. G2 is calibration; its best method is not a held-out discovery.
+
+![Distinct diagnostic cohorts: G1, G2 calibration and held-object verification](paper/figures/diagnostic_results.svg)
+
+**Do not pool these denominators.** In the32-layout held study, the fixed visual AND rule lost11 positives and corrected0 additional false positives relative to the aperture baseline.
+
+| C0: before action | C1: after action |
+|---|---|
+| ![Before the lift](assets/diagnostics/visualFN_C0.png) | ![After the lift, with gripper occlusion](assets/diagnostics/visualFN_C1.png) |
+
+Example seed3402301020: actual minimum target rise40.270mm vs estimated visible-center rise20.203mm. These are original observations, a **posthoc diagnostic example**, not repair-before/after images. [Explore both examples](https://cjgogo27.github.io/Guava-on-Piper/#diagnosis).
 
 ## Run locally, without a model/API
 

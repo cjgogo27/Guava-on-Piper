@@ -10,7 +10,7 @@ for n in names:
     p=R/n
     if p==dest or not p.is_file():continue
     b=p.read_bytes()
-    if p.suffix.lower() not in ['.png','.pdf'] and b'\x00' not in b:
+    if p.suffix.lower() not in ['.png','.pdf','.jpg','.jpeg','.mp4','.webm','.gif','.ico','.woff','.woff2'] and b'\x00' not in b:
         normalized=b'\n'.join(line.rstrip(b' \t') for line in b.replace(b'\r\n',b'\n').split(b'\n')).rstrip(b'\n')+b'\n'
         if normalized!=b:p.write_bytes(normalized);b=normalized
     files.append({'path':n.replace('\\','/'),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})

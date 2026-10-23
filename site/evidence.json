@@ -1,0 +1,207 @@
+{
+  "task_counts": [
+    {
+      "task": "pick_up_carrot",
+      "group": "unseen",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 1,
+      "planned": 30,
+      "sft_sr_planned": 0.03333333333333333,
+      "baseline_success": 1,
+      "baseline_sr": 0.03333333333333333,
+      "delta_pp": 0.0
+    },
+    {
+      "task": "tomato_near_potato",
+      "group": "unseen",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 6,
+      "planned": 30,
+      "sft_sr_planned": 0.2,
+      "baseline_success": 3,
+      "baseline_sr": 0.1,
+      "delta_pp": 10.0
+    },
+    {
+      "task": "lemon_in_bin",
+      "group": "unseen",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 2,
+      "planned": 30,
+      "sft_sr_planned": 0.06666666666666667,
+      "baseline_success": 0,
+      "baseline_sr": 0.0,
+      "delta_pp": 6.666666666666667
+    },
+    {
+      "task": "push_pot",
+      "group": "unseen",
+      "official_completed": 29,
+      "process_aborts": 1,
+      "sft_success": 14,
+      "planned": 30,
+      "sft_sr_planned": 0.4666666666666667,
+      "baseline_success": 2,
+      "baseline_sr": 0.06666666666666667,
+      "delta_pp": 40.0
+    },
+    {
+      "task": "cube_stack_reverse",
+      "group": "unseen",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 0,
+      "planned": 30,
+      "sft_sr_planned": 0.0,
+      "baseline_success": 0,
+      "baseline_sr": 0.0,
+      "delta_pp": 0.0
+    },
+    {
+      "task": "apple_juice_reverse_order",
+      "group": "unseen",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 10,
+      "planned": 30,
+      "sft_sr_planned": 0.3333333333333333,
+      "baseline_success": 11,
+      "baseline_sr": 0.36666666666666664,
+      "delta_pp": -3.3333333333333335
+    },
+    {
+      "task": "bin_and_tray_simple",
+      "group": "unseen",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 0,
+      "planned": 30,
+      "sft_sr_planned": 0.0,
+      "baseline_success": 0,
+      "baseline_sr": 0.0,
+      "delta_pp": 0.0
+    },
+    {
+      "task": "set_table",
+      "group": "unseen",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 0,
+      "planned": 30,
+      "sft_sr_planned": 0.0,
+      "baseline_success": 0,
+      "baseline_sr": 0.0,
+      "delta_pp": 0.0
+    },
+    {
+      "task": "can_in_bin",
+      "group": "trained",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 3,
+      "planned": 30,
+      "sft_sr_planned": 0.1,
+      "baseline_success": 1,
+      "baseline_sr": 0.03333333333333333,
+      "delta_pp": 6.666666666666667
+    },
+    {
+      "task": "apple_juice_order",
+      "group": "trained",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 17,
+      "planned": 30,
+      "sft_sr_planned": 0.5666666666666667,
+      "baseline_success": 15,
+      "baseline_sr": 0.5,
+      "delta_pp": 6.666666666666667
+    },
+    {
+      "task": "remove_cube_from_tray",
+      "group": "trained",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 2,
+      "planned": 30,
+      "sft_sr_planned": 0.06666666666666667,
+      "baseline_success": 14,
+      "baseline_sr": 0.4666666666666667,
+      "delta_pp": -40.0
+    },
+    {
+      "task": "push_basket",
+      "group": "trained",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 9,
+      "planned": 30,
+      "sft_sr_planned": 0.3,
+      "baseline_success": 1,
+      "baseline_sr": 0.03333333333333333,
+      "delta_pp": 26.666666666666668
+    },
+    {
+      "task": "close_drawer",
+      "group": "trained",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 2,
+      "planned": 30,
+      "sft_sr_planned": 0.06666666666666667,
+      "baseline_success": 1,
+      "baseline_sr": 0.03333333333333333,
+      "delta_pp": 3.3333333333333335
+    },
+    {
+      "task": "shell_game",
+      "group": "trained",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 0,
+      "planned": 30,
+      "sft_sr_planned": 0.0,
+      "baseline_success": 0,
+      "baseline_sr": 0.0,
+      "delta_pp": 0.0
+    },
+    {
+      "task": "red_objects_in_basket",
+      "group": "trained",
+      "official_completed": 30,
+      "process_aborts": 0,
+      "sft_success": 0,
+      "planned": 30,
+      "sft_sr_planned": 0.0,
+      "baseline_success": 0,
+      "baseline_sr": 0.0,
+      "delta_pp": 0.0
+    }
+  ],
+  "g1": {
+    "denominator": 48,
+    "counts": {
+      "D": 32,
+      "R": 38,
+      "O": 37,
+      "H": 39
+    }
+  },
+  "g2": {
+    "denominator": 16,
+    "counts": {
+      "D": 5,
+      "R": 6,
+      "O": 5,
+      "H": 6,
+      "SOR": 7,
+      "RAD": 5,
+      "CC": 7,
+      "Q0": 5
+    }
+  },
+  "source_scope": "Curated public numerical evidence; no new physics or model requests."
+}
