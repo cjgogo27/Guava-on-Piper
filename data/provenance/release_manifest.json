@@ -149,8 +149,8 @@
     },
     {
       "path": "docs/RELEASE_CHECKS.md",
-      "bytes": 1204,
-      "sha256": "4adce5569a8efaf08202c87063b79343b2cad311894f0d55ae785c9a83114717"
+      "bytes": 1923,
+      "sha256": "6c7f0660ad60b6dd603e3df69fda771f4df97e723cb75e5dbf1d7dc6060e3cb1"
     },
     {
       "path": "docs/REPRODUCIBILITY.md",
@@ -209,13 +209,13 @@
     },
     {
       "path": "paper/DRAFT.md",
-      "bytes": 21999,
-      "sha256": "a403ecc6459fdd5e3453fe23ec8135cff443c2a93c8f62af966f223f26423bf1"
+      "bytes": 23067,
+      "sha256": "c2e3a0e9a05f6af872cbe7799650412b6d3245eee92f0dc2e266483f8ef3bb2d"
     },
     {
       "path": "paper/DRAFT.pdf",
-      "bytes": 266476,
-      "sha256": "0f604839b7694824affb757f71973505e97af364789d4ea65a356011f88d94fd"
+      "bytes": 269212,
+      "sha256": "d96babdd0519ab33097e55d6a4869e4faa55c8ccc41f1d9671a3a4e972f6f32d"
     },
     {
       "path": "paper/OVERVIEW_ZH.md",
@@ -239,13 +239,13 @@
     },
     {
       "path": "paper/latex/main.tex",
-      "bytes": 24361,
-      "sha256": "783fa02e12af85b20caaec9ab0d3c4052754d3e17d4ba0fee97e8326dbbdb8e2"
+      "bytes": 25650,
+      "sha256": "045186bf17d4d382b055c9ba67f504534a6568ba11e692febfec6249fe4ab660"
     },
     {
       "path": "paper/references.bib",
-      "bytes": 5624,
-      "sha256": "0d0928e4e3ec1fdb7765ff567f76b37e02b3cd5bd6e4948918ebb7d26be5f9a0"
+      "bytes": 7020,
+      "sha256": "84e5c15ca47de8be7eef700caf80ee86daba95599c54b2ebbc325449381dd133"
     },
     {
       "path": "paper/review/READING_LOG.md",
@@ -288,6 +288,11 @@
       "sha256": "94d1aa388f21e4edb1e0960943ef823b4b1d3b1615905c6a7c96e8fbdd2f6225"
     },
     {
+      "path": "paper/review/related_work_update_receipts.json",
+      "bytes": 876,
+      "sha256": "c458892109d0380a1cb1f929ae23e665145bb7d6488974fc0af37ccc0a9fc543"
+    },
+    {
       "path": "paper/review/verified_references.bib",
       "bytes": 2507,
       "sha256": "7dc5199246727534843204dae0db4ca58610f8258fc73cd6923ea511fdff5274"
@@ -299,8 +304,8 @@
     },
     {
       "path": "scripts/build_paper_tex.py",
-      "bytes": 3554,
-      "sha256": "d24b60fc98a60bf6a07619ecaceac2dea3b78299090a3a4fb0682eb0c6cbc0af"
+      "bytes": 3638,
+      "sha256": "164e88146e51f183826a28a3ca018ad6060889d1e8a199ee767b09486a679055"
     },
     {
       "path": "scripts/build_release_manifest.py",

@@ -11,3 +11,9 @@ Checks performed before push:
 - Seven-page plain-report PDF compiled locally, text extracted, rendered representative pages inspected, zero overfull-box warnings after table-width fixes. No official conference template/status implied.
 
 These checks do not substitute for public raw-state replay, multiple training-seed replication, controlled executor ablations, a complete upstream runtime installer or real-robot testing. See `REPRODUCIBILITY.md`.
+
+## Related-work correction, 23 October 2026
+
+The draft now explicitly positions this audit against Code-as-Monitor, RAFAIL and CriticHack. Their bibliography entries were retrieved from arXiv's primary BibTeX endpoints; receipts are in `paper/review/related_work_update_receipts.json`. The bibliography now contains eleven references. These works were not reproduced by this release, and their published performance is not compared to our local counts. No new experimental numbers or RSI claims were added.
+
+The seven-page PDF was rebuilt with zero overfull boxes; revised related-work and reference pages were rendered and visually inspected. Numbered references now retain paragraph separation in the generated TeX.

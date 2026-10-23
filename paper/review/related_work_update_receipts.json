@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://arxiv.org/bibtex/2412.04455",
+    "sha256": "2aa78b08620ee8b6e329f40792879c0010b5d4914ee27d5b45e1d47b67f27de2",
+    "bytes": 466,
+    "retrieved_at": "2026-10-23T13:05:04.647745+00:00",
+    "purpose": "bibliographic metadata; full-paper replication not claimed"
+  },
+  {
+    "url": "https://arxiv.org/bibtex/2609.18324",
+    "sha256": "06ea5258ce5bb696d3a873d94da3f9e2c5193ab212414ab0b60e82a5eea713ae",
+    "bytes": 362,
+    "retrieved_at": "2026-10-23T13:05:06.395708+00:00",
+    "purpose": "bibliographic metadata; full-paper replication not claimed"
+  },
+  {
+    "url": "https://arxiv.org/bibtex/2610.02527",
+    "sha256": "59f490f681b4677c40aa80af0184ae04a03aa3a42e7434fede78721e3a727e0b",
+    "bytes": 376,
+    "retrieved_at": "2026-10-23T13:05:08.413369+00:00",
+    "purpose": "bibliographic metadata; full-paper replication not claimed"
+  }
+]

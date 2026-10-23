@@ -22,6 +22,8 @@ We make three artifact-level contributions. First, we provide a concrete success
 
 **Data generation and deployment.** MimicGen [4] demonstrates scalable demonstration generation, and DROID [5] emphasizes diverse real-world interaction data. Such data-centric systems motivate careful tracking of trajectory validity and execution assumptions. Our historical 1,041-record training set is mixed-quality metadata, not a uniformly approved counterpart to these datasets. No real-robot closed loop is reported.
 
+**Failure detection and supervision.** Code-as-Monitor [9] already uses visual spatio-temporal constraints for reactive and proactive monitoring. RAFAIL [10] models task-relevant relationships and task progress for failure detection. CriticHack [11] directly studies semantic errors amplified by visual-reward optimization and uses outcome verification as a diagnostic intervention. Our audit therefore does not claim novelty for distinguishing command arrival from task effects, detecting wrong-object outcomes, or adding a verifier to learning. We have not reproduced these methods under matched conditions; their published gains are not comparators to our local counts.
+
 **Evaluation validity and strong baselines.** SimplerEnv [6] studies simulation evaluation for real-world manipulation, making environment fidelity an explicit evaluation concern. Broader empirical work warns about unstable small-sample RL estimates [7] and reproducibility failures [8]. Our paired numerical diagnostics follow that motivation, but neither a local contact threshold nor a significant-looking count difference alone establishes general competence. Standard outlier processing and connected components are treated as necessary simple baselines, not novel algorithms.
 
 Verified references and the author's simulated pre-review reading log are distributed with this draft. The reading log distinguishes abstracts from full-text portions; it is not evidence that every paper was exhaustively reviewed. No actual conference-review status is implied.
@@ -134,7 +136,7 @@ The Piper migration yields a reusable evidence-audit artifact and several bounde
 
 ## References
 
-References [1]–[8] are verified against primary sources in `references.bib` and the reading log. The final venue format, author metadata and reference numbering remain editorial work before submission.
+References [1]–[11] are verified against primary sources in `references.bib`, the reading log and the related-work update receipts. The final venue format, author metadata and reference numbering remain editorial work before submission.
 
 1. Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness. https://arxiv.org/abs/2606.18363
 2. robosuite: A Modular Simulation Framework and Benchmark for Robot Learning. https://arxiv.org/abs/2009.12293
@@ -144,6 +146,9 @@ References [1]–[8] are verified against primary sources in `references.bib` an
 6. Evaluating Real-World Robot Manipulation Policies in Simulation. https://arxiv.org/abs/2405.05941
 7. Deep Reinforcement Learning at the Edge of the Statistical Precipice. https://arxiv.org/abs/2108.13264
 8. Deep Reinforcement Learning that Matters. https://arxiv.org/abs/1709.06560
+9. Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection. https://arxiv.org/abs/2412.04455
+10. RAFAIL: Relationship-Aware Failure Detection for Robotic Manipulation. https://arxiv.org/abs/2609.18324
+11. CriticHack: Evaluating Visual Rewards Under Robot Policy Optimization. https://arxiv.org/abs/2610.02527
 
 ## Appendix A. Per-task fixed-checkpoint counts
 

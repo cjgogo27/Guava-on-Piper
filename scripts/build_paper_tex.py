@@ -40,6 +40,7 @@ while i<len(lines):
         body.append(r'\hline\end{tabular}\end{minipage}\par\medskip');continue
     if line.startswith('### '):body.append(r'\subsection*{'+esc(line[4:])+'}')
     elif line.startswith('## '):body.append(r'\section*{'+esc(line[3:])+'}')
+    elif re.match(r'^\d+\. ',line):body.append(r'\par\noindent '+esc(line)+r'\par')
     else:body.append(esc(line))
     if line.startswith('## 5.'):
         body[-1:-1]=[r'\begin{figure}[ht]\centering\includegraphics[width=\linewidth]{../figures/diagnostic_results.pdf}\caption{Distinct diagnostic cohorts, not pooled samples. G1 uses 48 planned layouts; G2 is 16 calibration layouts including initial rejects; held verification uses 32 layouts. Counts do not imply statistically significant improvement or full-task success.}\end{figure}']
