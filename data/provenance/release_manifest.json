@@ -339,8 +339,8 @@
     },
     {
       "path": "site/app.js",
-      "bytes": 7841,
-      "sha256": "1ab3a422e12204c6a51d2eeb4fab3e0983d54a107ff264f70c26656444264dde"
+      "bytes": 7896,
+      "sha256": "391e0d4f009540a5b74f838156dbb2a7d39b11f68af56e995eb694db0d295257"
     },
     {
       "path": "site/assets/can_failure.mp4",
@@ -414,8 +414,8 @@
     },
     {
       "path": "site/styles.css",
-      "bytes": 18288,
-      "sha256": "a9c7fc3288e1537159d49678e150a88d62ccc22b3b417bda2623c125be9234a3"
+      "bytes": 18358,
+      "sha256": "349b0aeabcd36e2c2ab19beb9e5eb11d1215596910d2c622c168d9a2896d4c48"
     },
     {
       "path": "src/guava_piper_audit/__init__.py",

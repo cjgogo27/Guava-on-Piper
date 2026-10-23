@@ -21,7 +21,7 @@ function baselineChart(stage='g1'){
   const data=evidence[stage];const host=document.querySelector('#baseline-chart');host.replaceChildren();
   for(const [m,count] of Object.entries(data.counts)){
     const col=document.createElement('div');col.className='baseline-col';col.setAttribute('role','img');col.setAttribute('aria-label',`${methodNames[m]} ${count}/${data.denominator} 物理合格`);
-    const bar=document.createElement('div');bar.className='baseline-bar'+((stage==='g2'&&['SOR','CC'].includes(m))||(stage==='g1'&&m==='H')?' highlight':'');bar.style.height=`${count/data.denominator*170}px`;bar.append(text('span',String(count),'baseline-number'));col.append(bar,text('span',`${m} ${methodNames[m]}`,'baseline-method'));host.append(col);
+    const bar=document.createElement('div');bar.className='baseline-bar'+((stage==='g2'&&['SOR','CC'].includes(m))||(stage==='g1'&&m==='H')?' highlight':'');bar.style.height=`${count/data.denominator*170}px`;bar.append(text('span',String(count),'baseline-number'));const label=text('span',m,'baseline-method');label.append(text('span',' '+methodNames[m],'method-name'));col.append(bar,label);host.append(col);
   }
   document.querySelector('#stage-denominator').textContent=stage==='g1'?'48 个计划布局，含 7 个初态拒绝':'16 个校准布局，含 5 个初态拒绝；非密封测试';
   document.querySelector('#stage-headline').textContent=stage==='g1'?'32 → 38，但还不能说“显著改善”。':'标准 SOR / CC 已达到本次 8 方法并集：7 / 16。';
