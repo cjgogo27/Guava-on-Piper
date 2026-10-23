@@ -1,0 +1,4578 @@
+{
+  "at": 1792349144.5187328,
+  "lineages": [
+    {
+      "seed": 42,
+      "at": 1792348620.956286,
+      "r1_validation": {
+        "uniform": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 0.3333333333333333,
+          "qualified_sr_planned": 0.3333333333333333,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 0.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 0.0,
+            "val1_1_0_lift": 1.0,
+            "val1_1_0_carry": 0.0,
+            "val1_1_1_lift": 0.0,
+            "val1_1_1_carry": 0.0
+          }
+        },
+        "failure_focused": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 0.3333333333333333,
+          "qualified_sr_planned": 0.3333333333333333,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 0.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 0.0,
+            "val1_1_0_lift": 1.0,
+            "val1_1_0_carry": 0.0,
+            "val1_1_1_lift": 0.0,
+            "val1_1_1_carry": 0.0
+          }
+        },
+        "contrast_focused": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 0.16666666666666666,
+          "qualified_sr_planned": 0.16666666666666666,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.0,
+            "remove_cube_from_tray:carry": 0.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 0.0,
+            "val1_0_0_carry": 0.0,
+            "val1_1_0_lift": 1.0,
+            "val1_1_0_carry": 0.0,
+            "val1_1_1_lift": 0.0,
+            "val1_1_1_carry": 0.0
+          }
+        }
+      },
+      "initial_validation": {
+        "n": 6,
+        "planned": 6,
+        "qualified_sr": 0.8333333333333334,
+        "qualified_sr_planned": 0.8333333333333334,
+        "groups": {
+          "remove_cube_from_tray:lift": 1.0,
+          "remove_cube_from_tray:carry": 1.0,
+          "can_in_bin:lift": 1.0,
+          "can_in_bin:carry": 0.5
+        },
+        "by_scene": {
+          "val1_0_0_lift": 1.0,
+          "val1_0_0_carry": 1.0,
+          "val1_1_0_lift": 1.0,
+          "val1_1_0_carry": 1.0,
+          "val1_1_1_lift": 1.0,
+          "val1_1_1_carry": 0.0
+        }
+      },
+      "updated_validation": {
+        "n": 6,
+        "planned": 6,
+        "qualified_sr": 0.3333333333333333,
+        "qualified_sr_planned": 0.3333333333333333,
+        "groups": {
+          "remove_cube_from_tray:lift": 1.0,
+          "remove_cube_from_tray:carry": 0.0,
+          "can_in_bin:lift": 0.5,
+          "can_in_bin:carry": 0.0
+        },
+        "by_scene": {
+          "val1_0_0_lift": 1.0,
+          "val1_0_0_carry": 0.0,
+          "val1_1_0_lift": 1.0,
+          "val1_1_0_carry": 0.0,
+          "val1_1_1_lift": 0.0,
+          "val1_1_1_carry": 0.0
+        }
+      },
+      "theta1_validation_improved": false,
+      "r1_theta0_recipe": {
+        "can_in_bin:carry": "failure_focused",
+        "can_in_bin:lift": "failure_focused",
+        "remove_cube_from_tray:carry": "failure_focused",
+        "remove_cube_from_tray:lift": "failure_focused"
+      },
+      "r1_oracle_meta_recipe": "uniform",
+      "meta_supervision": [
+        {
+          "id": "meta:can_in_bin:carry",
+          "group": "can_in_bin:carry",
+          "prompt": "Choose the next bounded learning recipe for this task group: can_in_bin:carry. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 1, \"move_failures\": 1, \"not_lifted\": 1}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tie_count": 3
+        },
+        {
+          "id": "meta:can_in_bin:lift",
+          "group": "can_in_bin:lift",
+          "prompt": "Choose the next bounded learning recipe for this task group: can_in_bin:lift. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 2, \"move_failures\": 2, \"not_lifted\": 2}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "tie_count": 3
+        },
+        {
+          "id": "meta:remove_cube_from_tray:carry",
+          "group": "remove_cube_from_tray:carry",
+          "prompt": "Choose the next bounded learning recipe for this task group: remove_cube_from_tray:carry. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 2, \"move_failures\": 1, \"not_lifted\": 2}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "tie_count": 3
+        },
+        {
+          "id": "meta:remove_cube_from_tray:lift",
+          "group": "remove_cube_from_tray:lift",
+          "prompt": "Choose the next bounded learning recipe for this task group: remove_cube_from_tray:lift. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 1, \"move_failures\": 1, \"not_lifted\": 1}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.5,
+            0.5,
+            0.0
+          ],
+          "measured_recipe_scores": [
+            1.0,
+            1.0,
+            0.0
+          ],
+          "tie_count": 2
+        }
+      ],
+      "r2_recipes": {
+        "uniform": {
+          "can_in_bin:carry": "uniform",
+          "can_in_bin:lift": "uniform",
+          "remove_cube_from_tray:carry": "uniform",
+          "remove_cube_from_tray:lift": "uniform"
+        },
+        "frozen_proposer": {
+          "can_in_bin:carry": "failure_focused",
+          "can_in_bin:lift": "failure_focused",
+          "remove_cube_from_tray:carry": "failure_focused",
+          "remove_cube_from_tray:lift": "failure_focused"
+        },
+        "updated_proposer": {
+          "can_in_bin:carry": "failure_focused",
+          "can_in_bin:lift": "failure_focused",
+          "remove_cube_from_tray:carry": "failure_focused",
+          "remove_cube_from_tray:lift": "failure_focused"
+        },
+        "task_only_proposer": {
+          "can_in_bin:carry": "contrast_focused",
+          "can_in_bin:lift": "contrast_focused",
+          "remove_cube_from_tray:carry": "contrast_focused",
+          "remove_cube_from_tray:lift": "contrast_focused"
+        }
+      },
+      "r2_validation_common_start": {
+        "uniform": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.375,
+          "qualified_sr_planned": 0.375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.0,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 1.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 1.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 0.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "frozen_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.5,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 1.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 1.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "updated_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.5,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 1.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 1.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "task_only_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.5,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 1.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 1.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        }
+      },
+      "test": {
+        "theta0": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.42857142857142855,
+          "qualified_sr_planned": 0.375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "theta1": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "uniform": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.35714285714285715,
+          "qualified_sr_planned": 0.3125,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.6666666666666666,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.25,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 0.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "frozen_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5714285714285714,
+          "qualified_sr_planned": 0.5,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "updated_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5714285714285714,
+          "qualified_sr_planned": 0.5,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "task_only_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.42857142857142855,
+          "qualified_sr_planned": 0.375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 0.0,
+            "test_1_3_carry": 1.0
+          }
+        }
+      },
+      "test_predictions": {
+        "theta0": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.12406696379184723,
+              0.03136904165148735,
+              0.8090181946754456,
+              0.03554578125476837
+            ],
+            "choice": 2,
+            "seconds": 1.9833521842956543
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.36871013045310974,
+              0.22363398969173431,
+              0.32538554072380066,
+              0.08227035403251648
+            ],
+            "choice": 0,
+            "seconds": 1.0526835918426514
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.5328077077865601,
+              0.17297732830047607,
+              0.22210729122161865,
+              0.07210768014192581
+            ],
+            "choice": 0,
+            "seconds": 0.16288042068481445
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.38822588324546814,
+              0.30235064029693604,
+              0.1833849400281906,
+              0.12603849172592163
+            ],
+            "choice": 0,
+            "seconds": 0.17637252807617188
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.29159608483314514,
+              0.1768619567155838,
+              0.1072722002863884,
+              0.42426979541778564
+            ],
+            "choice": 3,
+            "seconds": 0.16201567649841309
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.17125137150287628,
+              0.08089340478181839,
+              0.46550944447517395,
+              0.2823457717895508
+            ],
+            "choice": 2,
+            "seconds": 0.16626596450805664
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.11010222882032394,
+              0.09716486185789108,
+              0.49344393610954285,
+              0.29928886890411377
+            ],
+            "choice": 2,
+            "seconds": 1.0487079620361328
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.2535484731197357,
+              0.15378493070602417,
+              0.22375574707984924,
+              0.36891084909439087
+            ],
+            "choice": 3,
+            "seconds": 1.0771560668945312
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.08430057764053345,
+              0.05793888866901398,
+              0.05793888866901398,
+              0.799821674823761
+            ],
+            "choice": 3,
+            "seconds": 0.163560152053833
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.15097777545452118,
+              0.17108023166656494,
+              0.5269642472267151,
+              0.15097777545452118
+            ],
+            "choice": 2,
+            "seconds": 0.1655726432800293
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.14334824681282043,
+              0.11163973063230515,
+              0.303468257188797,
+              0.44154369831085205
+            ],
+            "choice": 3,
+            "seconds": 0.16034221649169922
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.21710693836212158,
+              0.19159622490406036,
+              0.5208125114440918,
+              0.07048430293798447
+            ],
+            "choice": 2,
+            "seconds": 0.16745805740356445
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.22643089294433594,
+              0.09439042955636978,
+              0.4793541729450226,
+              0.19982454180717468
+            ],
+            "choice": 2,
+            "seconds": 0.1631913185119629
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.29245224595069885,
+              0.07394350320100784,
+              0.3755161166191101,
+              0.25808820128440857
+            ],
+            "choice": 2,
+            "seconds": 0.16967201232910156
+          }
+        ],
+        "theta1": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.05428459122776985,
+              0.042276881635189056,
+              0.8491538763046265,
+              0.05428459122776985
+            ],
+            "choice": 2,
+            "seconds": 2.0635106563568115
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.09872899949550629,
+              0.05988216772675514,
+              0.7295141220092773,
+              0.11187462508678436
+            ],
+            "choice": 2,
+            "seconds": 1.0695390701293945
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.1600836217403412,
+              0.07561814785003662,
+              0.5587467551231384,
+              0.20555146038532257
+            ],
+            "choice": 2,
+            "seconds": 0.17339801788330078
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.07950436323881149,
+              0.45751604437828064,
+              0.14853371679782867,
+              0.3144458830356598
+            ],
+            "choice": 1,
+            "seconds": 0.16773104667663574
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.055233463644981384,
+              0.21845261752605438,
+              0.13249820470809937,
+              0.5938157439231873
+            ],
+            "choice": 3,
+            "seconds": 0.1713712215423584
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.04534592106938362,
+              0.17934660613536835,
+              0.7093295454978943,
+              0.06597792357206345
+            ],
+            "choice": 2,
+            "seconds": 0.17955350875854492
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.04032890126109123,
+              0.23207683861255646,
+              0.6308501958847046,
+              0.09674401581287384
+            ],
+            "choice": 2,
+            "seconds": 1.0439813137054443
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.10357367992401123,
+              0.46418502926826477,
+              0.15069881081581116,
+              0.28154245018959045
+            ],
+            "choice": 1,
+            "seconds": 1.0347251892089844
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.07273972779512405,
+              0.2538866102695465,
+              0.13589569926261902,
+              0.537477970123291
+            ],
+            "choice": 3,
+            "seconds": 0.27977871894836426
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.07173682749271393,
+              0.5300674438476562,
+              0.3643096685409546,
+              0.033886075019836426
+            ],
+            "choice": 1,
+            "seconds": 0.25105762481689453
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.061180952936410904,
+              0.31070253252983093,
+              0.5804687142372131,
+              0.04764777421951294
+            ],
+            "choice": 2,
+            "seconds": 0.1740570068359375
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.06507673114538193,
+              0.03483306244015694,
+              0.7927968502044678,
+              0.10729338228702545
+            ],
+            "choice": 2,
+            "seconds": 0.16958880424499512
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.05061079561710358,
+              0.023906845599412918,
+              0.6986604928970337,
+              0.22682183980941772
+            ],
+            "choice": 2,
+            "seconds": 0.1633472442626953
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.18327151238918304,
+              0.2666584551334381,
+              0.34239622950553894,
+              0.2076738178730011
+            ],
+            "choice": 2,
+            "seconds": 0.17800354957580566
+          }
+        ],
+        "uniform": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.6259507536888123,
+              0.13966849446296692,
+              0.20321646332740784,
+              0.031164253130555153
+            ],
+            "choice": 0,
+            "seconds": 1.9184470176696777
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.5171540975570679,
+              0.3136698305606842,
+              0.0793081521987915,
+              0.08986790478229523
+            ],
+            "choice": 0,
+            "seconds": 1.065565586090088
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.5909453630447388,
+              0.3163102865219116,
+              0.03777787461876869,
+              0.054966479539871216
+            ],
+            "choice": 0,
+            "seconds": 0.17515039443969727
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.3527067005634308,
+              0.3527067005634308,
+              0.019898351281881332,
+              0.2746882438659668
+            ],
+            "choice": 0,
+            "seconds": 0.16812515258789062
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.3384167551994324,
+              0.3384167551994324,
+              0.024514827877283096,
+              0.29865172505378723
+            ],
+            "choice": 0,
+            "seconds": 0.16118979454040527
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.3924376964569092,
+              0.30563080310821533,
+              0.0322132483124733,
+              0.2697182297706604
+            ],
+            "choice": 0,
+            "seconds": 0.1678612232208252
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.36109238862991333,
+              0.36109238862991333,
+              0.02964026853442192,
+              0.24817493557929993
+            ],
+            "choice": 0,
+            "seconds": 1.0449228286743164
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.3373156785964966,
+              0.3373156785964966,
+              0.027688557282090187,
+              0.2976800501346588
+            ],
+            "choice": 0,
+            "seconds": 1.137084722518921
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.29865172505378723,
+              0.3384167551994324,
+              0.024514827877283096,
+              0.3384167551994324
+            ],
+            "choice": 1,
+            "seconds": 0.17373943328857422
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.42219212651252747,
+              0.42219212651252747,
+              0.12096007168292999,
+              0.03465564176440239
+            ],
+            "choice": 0,
+            "seconds": 0.16885089874267578
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.4244886636734009,
+              0.37460991740226746,
+              0.15616066753864288,
+              0.04474077373743057
+            ],
+            "choice": 0,
+            "seconds": 0.16426706314086914
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.4117252826690674,
+              0.13366763293743134,
+              0.17163263261318207,
+              0.28297439217567444
+            ],
+            "choice": 0,
+            "seconds": 0.1779489517211914
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.39008522033691406,
+              0.1626117080450058,
+              0.14350435137748718,
+              0.3037986755371094
+            ],
+            "choice": 0,
+            "seconds": 0.1681060791015625
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.6336658000946045,
+              0.1602158099412918,
+              0.1602158099412918,
+              0.04590259864926338
+            ],
+            "choice": 0,
+            "seconds": 0.16930818557739258
+          }
+        ],
+        "frozen_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.5635696053504944,
+              0.14249271154403687,
+              0.1829642653465271,
+              0.11097343266010284
+            ],
+            "choice": 0,
+            "seconds": 1.9376001358032227
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.494022935628891,
+              0.29964005947113037,
+              0.04595128819346428,
+              0.16038575768470764
+            ],
+            "choice": 0,
+            "seconds": 1.0599720478057861
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.480095237493515,
+              0.4236825406551361,
+              0.012794104404747486,
+              0.0834280326962471
+            ],
+            "choice": 0,
+            "seconds": 0.17829298973083496
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.3020532727241516,
+              0.387844055891037,
+              0.00804944708943367,
+              0.3020532727241516
+            ],
+            "choice": 1,
+            "seconds": 0.17718124389648438
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.2192547768354416,
+              0.40962183475494385,
+              0.00963338278234005,
+              0.36149001121520996
+            ],
+            "choice": 1,
+            "seconds": 0.1700427532196045
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.38461780548095703,
+              0.3394240140914917,
+              0.011614451184868813,
+              0.2643437087535858
+            ],
+            "choice": 0,
+            "seconds": 0.18178129196166992
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.25382399559020996,
+              0.5373454093933105,
+              0.01115224789828062,
+              0.197678342461586
+            ],
+            "choice": 1,
+            "seconds": 1.0716767311096191
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.2525637745857239,
+              0.4164072871208191,
+              0.006730597000569105,
+              0.32429832220077515
+            ],
+            "choice": 1,
+            "seconds": 1.0370194911956787
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.18017715215682983,
+              0.43222254514694214,
+              0.0061653233133256435,
+              0.3814350664615631
+            ],
+            "choice": 1,
+            "seconds": 0.16625022888183594
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.30274543166160583,
+              0.4991427958011627,
+              0.11137381941080093,
+              0.08673800528049469
+            ],
+            "choice": 1,
+            "seconds": 0.16939878463745117
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.30750206112861633,
+              0.4474128484725952,
+              0.14525368809700012,
+              0.09983130544424057
+            ],
+            "choice": 1,
+            "seconds": 0.16387677192687988
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.42266973853111267,
+              0.08322860300540924,
+              0.1210969090461731,
+              0.3730047345161438
+            ],
+            "choice": 0,
+            "seconds": 0.16936206817626953
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.30900928378105164,
+              0.128814235329628,
+              0.16540074348449707,
+              0.3967757821083069
+            ],
+            "choice": 3,
+            "seconds": 0.16496968269348145
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.5673840641975403,
+              0.1266005039215088,
+              0.16255827248096466,
+              0.14345715939998627
+            ],
+            "choice": 0,
+            "seconds": 0.17118573188781738
+          }
+        ],
+        "updated_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.5635696053504944,
+              0.14249271154403687,
+              0.1829642653465271,
+              0.11097343266010284
+            ],
+            "choice": 0,
+            "seconds": 1.953317403793335
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.494022935628891,
+              0.29964005947113037,
+              0.04595128819346428,
+              0.16038575768470764
+            ],
+            "choice": 0,
+            "seconds": 1.0665693283081055
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.480095237493515,
+              0.4236825406551361,
+              0.012794104404747486,
+              0.0834280326962471
+            ],
+            "choice": 0,
+            "seconds": 0.17628931999206543
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.3020532727241516,
+              0.387844055891037,
+              0.00804944708943367,
+              0.3020532727241516
+            ],
+            "choice": 1,
+            "seconds": 0.18319940567016602
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.2192547768354416,
+              0.40962183475494385,
+              0.00963338278234005,
+              0.36149001121520996
+            ],
+            "choice": 1,
+            "seconds": 0.16986870765686035
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.38461780548095703,
+              0.3394240140914917,
+              0.011614451184868813,
+              0.2643437087535858
+            ],
+            "choice": 0,
+            "seconds": 0.17023634910583496
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.25382399559020996,
+              0.5373454093933105,
+              0.01115224789828062,
+              0.197678342461586
+            ],
+            "choice": 1,
+            "seconds": 1.058239459991455
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.2525637745857239,
+              0.4164072871208191,
+              0.006730597000569105,
+              0.32429832220077515
+            ],
+            "choice": 1,
+            "seconds": 1.0678448677062988
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.18017715215682983,
+              0.43222254514694214,
+              0.0061653233133256435,
+              0.3814350664615631
+            ],
+            "choice": 1,
+            "seconds": 0.17227792739868164
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.30274543166160583,
+              0.4991427958011627,
+              0.11137381941080093,
+              0.08673800528049469
+            ],
+            "choice": 1,
+            "seconds": 0.18030118942260742
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.30750206112861633,
+              0.4474128484725952,
+              0.14525368809700012,
+              0.09983130544424057
+            ],
+            "choice": 1,
+            "seconds": 0.16962409019470215
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.42266973853111267,
+              0.08322860300540924,
+              0.1210969090461731,
+              0.3730047345161438
+            ],
+            "choice": 0,
+            "seconds": 0.17162752151489258
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.30900928378105164,
+              0.128814235329628,
+              0.16540074348449707,
+              0.3967757821083069
+            ],
+            "choice": 3,
+            "seconds": 0.1753077507019043
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.5673840641975403,
+              0.1266005039215088,
+              0.16255827248096466,
+              0.14345715939998627
+            ],
+            "choice": 0,
+            "seconds": 0.17957854270935059
+          }
+        ],
+        "task_only_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.5863203406333923,
+              0.0793498232960701,
+              0.24441467225551605,
+              0.08991513401269913
+            ],
+            "choice": 0,
+            "seconds": 1.961479902267456
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.6330268979072571,
+              0.07560428231954575,
+              0.11000357568264008,
+              0.1813652515411377
+            ],
+            "choice": 0,
+            "seconds": 1.0700657367706299
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.7466118931770325,
+              0.06944572180509567,
+              0.06944572180509567,
+              0.11449664831161499
+            ],
+            "choice": 0,
+            "seconds": 0.1783461570739746
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.2776778042316437,
+              0.21625569462776184,
+              0.04825316369533539,
+              0.4578132927417755
+            ],
+            "choice": 3,
+            "seconds": 0.16832804679870605
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.1257621943950653,
+              0.1257621943950653,
+              0.02476404793560505,
+              0.7237115502357483
+            ],
+            "choice": 3,
+            "seconds": 0.16357827186584473
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.5132583975791931,
+              0.24244610965251923,
+              0.11452343314886093,
+              0.12977205216884613
+            ],
+            "choice": 0,
+            "seconds": 0.17830133438110352
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.27349722385406494,
+              0.5789936184883118,
+              0.07835827022790909,
+              0.06915093213319778
+            ],
+            "choice": 1,
+            "seconds": 1.0488739013671875
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.341046005487442,
+              0.341046005487442,
+              0.05230110138654709,
+              0.26560690999031067
+            ],
+            "choice": 0,
+            "seconds": 1.0474908351898193
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.1663520485162735,
+              0.6579350829124451,
+              0.02890765108168125,
+              0.14680516719818115
+            ],
+            "choice": 1,
+            "seconds": 0.17589592933654785
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.3430213928222656,
+              0.4990931451320648,
+              0.0982772633433342,
+              0.05960817635059357
+            ],
+            "choice": 1,
+            "seconds": 0.16849493980407715
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.22377386689186096,
+              0.6892720460891724,
+              0.07264873385429382,
+              0.014305383898317814
+            ],
+            "choice": 1,
+            "seconds": 0.16735243797302246
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.3401510417461395,
+              0.04062524810433388,
+              0.3854416310787201,
+              0.23378215730190277
+            ],
+            "choice": 2,
+            "seconds": 0.1744842529296875
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.3220197856426239,
+              0.0339406356215477,
+              0.3220197856426239,
+              0.3220197856426239
+            ],
+            "choice": 0,
+            "seconds": 0.16066217422485352
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.683996319770813,
+              0.08169171214103699,
+              0.15262021124362946,
+              0.08169171214103699
+            ],
+            "choice": 0,
+            "seconds": 0.16573047637939453
+          }
+        ]
+      },
+      "theta0": "[private location omitted]",
+      "theta1": "[private location omitted]",
+      "theta2": "[private location omitted]",
+      "caveat": "bounded recipe selector; exploratory 2-transition pilot; unpromoted/regressed candidates explicitly retained, not proof of open-ended RSI or Astra weight improvement"
+    },
+    {
+      "seed": 137,
+      "at": 1792348630.269914,
+      "r1_validation": {
+        "uniform": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 0.8333333333333334,
+          "qualified_sr_planned": 0.8333333333333334,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 1.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 1.0,
+            "val1_1_0_lift": 0.0,
+            "val1_1_0_carry": 1.0,
+            "val1_1_1_lift": 1.0,
+            "val1_1_1_carry": 1.0
+          }
+        },
+        "failure_focused": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 1.0,
+          "qualified_sr_planned": 1.0,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 1.0,
+            "can_in_bin:carry": 1.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 1.0,
+            "val1_1_0_lift": 1.0,
+            "val1_1_0_carry": 1.0,
+            "val1_1_1_lift": 1.0,
+            "val1_1_1_carry": 1.0
+          }
+        },
+        "contrast_focused": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 0.8333333333333334,
+          "qualified_sr_planned": 0.8333333333333334,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 1.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 1.0,
+            "val1_1_0_lift": 0.0,
+            "val1_1_0_carry": 1.0,
+            "val1_1_1_lift": 1.0,
+            "val1_1_1_carry": 1.0
+          }
+        }
+      },
+      "initial_validation": {
+        "n": 6,
+        "planned": 6,
+        "qualified_sr": 0.6666666666666666,
+        "qualified_sr_planned": 0.6666666666666666,
+        "groups": {
+          "remove_cube_from_tray:lift": 0.0,
+          "remove_cube_from_tray:carry": 0.0,
+          "can_in_bin:lift": 1.0,
+          "can_in_bin:carry": 1.0
+        },
+        "by_scene": {
+          "val1_0_0_lift": 0.0,
+          "val1_0_0_carry": 0.0,
+          "val1_1_0_lift": 1.0,
+          "val1_1_0_carry": 1.0,
+          "val1_1_1_lift": 1.0,
+          "val1_1_1_carry": 1.0
+        }
+      },
+      "updated_validation": {
+        "n": 6,
+        "planned": 6,
+        "qualified_sr": 1.0,
+        "qualified_sr_planned": 1.0,
+        "groups": {
+          "remove_cube_from_tray:lift": 1.0,
+          "remove_cube_from_tray:carry": 1.0,
+          "can_in_bin:lift": 1.0,
+          "can_in_bin:carry": 1.0
+        },
+        "by_scene": {
+          "val1_0_0_lift": 1.0,
+          "val1_0_0_carry": 1.0,
+          "val1_1_0_lift": 1.0,
+          "val1_1_0_carry": 1.0,
+          "val1_1_1_lift": 1.0,
+          "val1_1_1_carry": 1.0
+        }
+      },
+      "theta1_validation_improved": true,
+      "r1_theta0_recipe": {
+        "can_in_bin:carry": "failure_focused",
+        "can_in_bin:lift": "failure_focused",
+        "remove_cube_from_tray:carry": "failure_focused",
+        "remove_cube_from_tray:lift": "failure_focused"
+      },
+      "r1_oracle_meta_recipe": "failure_focused",
+      "meta_supervision": [
+        {
+          "id": "meta:can_in_bin:carry",
+          "group": "can_in_bin:carry",
+          "prompt": "Choose the next bounded learning recipe for this task group: can_in_bin:carry. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 4, \"move_failures\": 4, \"not_lifted\": 4}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tie_count": 3
+        },
+        {
+          "id": "meta:can_in_bin:lift",
+          "group": "can_in_bin:lift",
+          "prompt": "Choose the next bounded learning recipe for this task group: can_in_bin:lift. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 2, \"move_failures\": 2, \"not_lifted\": 2}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "measured_recipe_scores": [
+            0.5,
+            1.0,
+            0.5
+          ],
+          "tie_count": 1
+        },
+        {
+          "id": "meta:remove_cube_from_tray:carry",
+          "group": "remove_cube_from_tray:carry",
+          "prompt": "Choose the next bounded learning recipe for this task group: remove_cube_from_tray:carry. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 3, \"move_failures\": 2, \"not_lifted\": 3}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tie_count": 3
+        },
+        {
+          "id": "meta:remove_cube_from_tray:lift",
+          "group": "remove_cube_from_tray:lift",
+          "prompt": "Choose the next bounded learning recipe for this task group: remove_cube_from_tray:lift. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 1, \"move_failures\": 1, \"not_lifted\": 1}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tie_count": 3
+        }
+      ],
+      "r2_recipes": {
+        "uniform": {
+          "can_in_bin:carry": "uniform",
+          "can_in_bin:lift": "uniform",
+          "remove_cube_from_tray:carry": "uniform",
+          "remove_cube_from_tray:lift": "uniform"
+        },
+        "frozen_proposer": {
+          "can_in_bin:carry": "failure_focused",
+          "can_in_bin:lift": "failure_focused",
+          "remove_cube_from_tray:carry": "failure_focused",
+          "remove_cube_from_tray:lift": "failure_focused"
+        },
+        "updated_proposer": {
+          "can_in_bin:carry": "failure_focused",
+          "can_in_bin:lift": "uniform",
+          "remove_cube_from_tray:carry": "failure_focused",
+          "remove_cube_from_tray:lift": "failure_focused"
+        },
+        "task_only_proposer": {
+          "can_in_bin:carry": "contrast_focused",
+          "can_in_bin:lift": "uniform",
+          "remove_cube_from_tray:carry": "uniform",
+          "remove_cube_from_tray:lift": "contrast_focused"
+        }
+      },
+      "r2_validation_common_start": {
+        "uniform": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.25,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.0,
+            "remove_cube_from_tray:carry": 0.5,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 0.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 0.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "frozen_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.375,
+          "qualified_sr_planned": 0.375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.0,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 1.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 1.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 0.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "updated_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.375,
+          "qualified_sr_planned": 0.375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.0,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 1.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 1.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 0.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "task_only_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.375,
+          "qualified_sr_planned": 0.375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 0.5,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 1.0,
+            "val2_0_0_carry": 1.0,
+            "val2_0_1_lift": 0.0,
+            "val2_0_1_carry": 0.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        }
+      },
+      "test": {
+        "theta0": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.35714285714285715,
+          "qualified_sr_planned": 0.3125,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 0.0,
+            "test_1_3_carry": 0.0
+          }
+        },
+        "theta1": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.35714285714285715,
+          "qualified_sr_planned": 0.3125,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "uniform": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "frozen_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.2857142857142857,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.6666666666666666,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.0,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 0.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 0.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "updated_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.2857142857142857,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.6666666666666666,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.0,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 0.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 0.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "task_only_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        }
+      },
+      "test_predictions": {
+        "theta0": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.1507393717765808,
+              0.2816182076931,
+              0.3191152513027191,
+              0.24852719902992249
+            ],
+            "choice": 2,
+            "seconds": 2.066659927368164
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.19203777611255646,
+              0.5220127701759338,
+              0.11647678911685944,
+              0.16947272419929504
+            ],
+            "choice": 1,
+            "seconds": 1.0800895690917969
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.2945403754711151,
+              0.4285537004470825,
+              0.07447145879268646,
+              0.2024344503879547
+            ],
+            "choice": 1,
+            "seconds": 0.17860674858093262
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.22501009702682495,
+              0.6116407513618469,
+              0.026873620226979256,
+              0.13647550344467163
+            ],
+            "choice": 1,
+            "seconds": 0.18223214149475098
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.1937120407819748,
+              0.5966750979423523,
+              0.015900852158665657,
+              0.1937120407819748
+            ],
+            "choice": 1,
+            "seconds": 0.17622733116149902
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.14007437229156494,
+              0.23094360530376434,
+              0.14007437229156494,
+              0.4889076054096222
+            ],
+            "choice": 3,
+            "seconds": 0.18137097358703613
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.11452343314886093,
+              0.24244610965251923,
+              0.12977205216884613,
+              0.5132583975791931
+            ],
+            "choice": 3,
+            "seconds": 1.059457778930664
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.1712174117565155,
+              0.41072922945022583,
+              0.055586155503988266,
+              0.3624672591686249
+            ],
+            "choice": 1,
+            "seconds": 1.0715830326080322
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.13591858744621277,
+              0.4186587333679199,
+              0.026763956993818283,
+              0.4186587333679199
+            ],
+            "choice": 1,
+            "seconds": 0.17912626266479492
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.13859321177005768,
+              0.42689716815948486,
+              0.05777424946427345,
+              0.3767354190349579
+            ],
+            "choice": 1,
+            "seconds": 0.1820971965789795
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.14181706309318542,
+              0.3854987323284149,
+              0.03585696965456009,
+              0.43682730197906494
+            ],
+            "choice": 3,
+            "seconds": 0.17594075202941895
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.15325991809368134,
+              0.60615473985672,
+              0.10533388704061508,
+              0.13525140285491943
+            ],
+            "choice": 1,
+            "seconds": 0.18294405937194824
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.1931052953004837,
+              0.40880391001701355,
+              0.1171242818236351,
+              0.28096655011177063
+            ],
+            "choice": 1,
+            "seconds": 0.1796259880065918
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.18969032168388367,
+              0.35438814759254456,
+              0.05434718355536461,
+              0.40157440304756165
+            ],
+            "choice": 3,
+            "seconds": 0.18378591537475586
+          }
+        ],
+        "theta1": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.5361111164093018,
+              0.0822153091430664,
+              0.32516783475875854,
+              0.05650569498538971
+            ],
+            "choice": 0,
+            "seconds": 2.0132782459259033
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.4294135868549347,
+              0.09581512212753296,
+              0.378956139087677,
+              0.09581512212753296
+            ],
+            "choice": 0,
+            "seconds": 1.0887360572814941
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.5613323450088501,
+              0.09754493087530136,
+              0.265154629945755,
+              0.07596807181835175
+            ],
+            "choice": 0,
+            "seconds": 0.20604825019836426
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.4382091164588928,
+              0.3412775993347168,
+              0.1612081378698349,
+              0.05930515378713608
+            ],
+            "choice": 0,
+            "seconds": 0.2015373706817627
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.32863420248031616,
+              0.42197465896606445,
+              0.15523581206798553,
+              0.09415527433156967
+            ],
+            "choice": 1,
+            "seconds": 0.17689752578735352
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.30791211128234863,
+              0.21162469685077667,
+              0.4480094611644745,
+              0.03245369717478752
+            ],
+            "choice": 2,
+            "seconds": 0.18178606033325195
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.29947370290756226,
+              0.2332303524017334,
+              0.4357316493988037,
+              0.031564295291900635
+            ],
+            "choice": 2,
+            "seconds": 1.074803113937378
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.46965259313583374,
+              0.3657658100128174,
+              0.13455772399902344,
+              0.030023885890841484
+            ],
+            "choice": 0,
+            "seconds": 1.0596239566802979
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.4051744043827057,
+              0.45912274718284607,
+              0.1024441346526146,
+              0.033258743584156036
+            ],
+            "choice": 1,
+            "seconds": 0.20927071571350098
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.3898702561855316,
+              0.4417808949947357,
+              0.14342525601387024,
+              0.024923574179410934
+            ],
+            "choice": 1,
+            "seconds": 0.20017576217651367
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.3898702561855316,
+              0.4417808949947357,
+              0.14342525601387024,
+              0.024923574179410934
+            ],
+            "choice": 1,
+            "seconds": 0.18207454681396484
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.3192707598209381,
+              0.0628681406378746,
+              0.5263884663581848,
+              0.09147259593009949
+            ],
+            "choice": 2,
+            "seconds": 0.1856672763824463
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.3386038541793823,
+              0.06667505204677582,
+              0.4347759485244751,
+              0.15994514524936676
+            ],
+            "choice": 2,
+            "seconds": 0.1903538703918457
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.570400595664978,
+              0.23777835071086884,
+              0.16342251002788544,
+              0.028398573398590088
+            ],
+            "choice": 0,
+            "seconds": 0.18196725845336914
+          }
+        ],
+        "uniform": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.26262348890304565,
+              0.02294778637588024,
+              0.5222892165184021,
+              0.19213947653770447
+            ],
+            "choice": 2,
+            "seconds": 2.0601370334625244
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.29661229252815247,
+              0.025917693972587585,
+              0.29661229252815247,
+              0.3808577358722687
+            ],
+            "choice": 3,
+            "seconds": 1.2270374298095703
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.29029449820518494,
+              0.030596813187003136,
+              0.3289467394351959,
+              0.35016199946403503
+            ],
+            "choice": 3,
+            "seconds": 0.19758081436157227
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.22207477688789368,
+              0.05614929646253586,
+              0.25164368748664856,
+              0.4701322913169861
+            ],
+            "choice": 3,
+            "seconds": 0.19986224174499512
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.20033171772956848,
+              0.061097726225852966,
+              0.22700558602809906,
+              0.5115649700164795
+            ],
+            "choice": 3,
+            "seconds": 0.196336030960083
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.19749270379543304,
+              0.041396718472242355,
+              0.4737603962421417,
+              0.28735020756721497
+            ],
+            "choice": 2,
+            "seconds": 0.20540332794189453
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.20704002678394318,
+              0.043397944420576096,
+              0.4665718972682953,
+              0.28299015760421753
+            ],
+            "choice": 2,
+            "seconds": 1.0650296211242676
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.30443331599235535,
+              0.08193711936473846,
+              0.2686614394187927,
+              0.34496814012527466
+            ],
+            "choice": 3,
+            "seconds": 1.0580778121948242
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.27020546793937683,
+              0.11263839155435562,
+              0.27020546793937683,
+              0.3469506800174713
+            ],
+            "choice": 3,
+            "seconds": 0.18275666236877441
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.28104665875434875,
+              0.11005944758653641,
+              0.3608710467815399,
+              0.24802280962467194
+            ],
+            "choice": 2,
+            "seconds": 0.18448519706726074
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.23084290325641632,
+              0.10243592411279678,
+              0.4051419496536255,
+              0.261579304933548
+            ],
+            "choice": 2,
+            "seconds": 0.1762700080871582
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.15129689872264862,
+              0.011666765436530113,
+              0.49608349800109863,
+              0.34095287322998047
+            ],
+            "choice": 2,
+            "seconds": 0.18305420875549316
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.16975723206996918,
+              0.015789881348609924,
+              0.40722644329071045,
+              0.40722644329071045
+            ],
+            "choice": 2,
+            "seconds": 0.17909479141235352
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.29886531829833984,
+              0.033531758934259415,
+              0.434846431016922,
+              0.23275654017925262
+            ],
+            "choice": 2,
+            "seconds": 0.1846327781677246
+          }
+        ],
+        "frozen_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 2.049072027206421
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 1.0863733291625977
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.2801288366317749,
+              0.19252954423427582,
+              0.24721282720565796,
+              0.2801288366317749
+            ],
+            "choice": 0,
+            "seconds": 0.17882108688354492
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.2801288366317749,
+              0.19252954423427582,
+              0.24721282720565796,
+              0.2801288366317749
+            ],
+            "choice": 0,
+            "seconds": 0.18094921112060547
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.2801288366317749,
+              0.19252954423427582,
+              0.24721282720565796,
+              0.2801288366317749
+            ],
+            "choice": 0,
+            "seconds": 0.17435359954833984
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 0.1800830364227295
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 1.059891939163208
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 1.0544495582580566
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 0.16118597984313965
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.2885095477104187,
+              0.19828951358795166,
+              0.2246914505958557,
+              0.2885095477104187
+            ],
+            "choice": 0,
+            "seconds": 0.17749309539794922
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.17029380798339844
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.19692444801330566
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.16756224632263184
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.17487001419067383
+          }
+        ],
+        "updated_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 2.019853353500366
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 1.0875260829925537
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.2801288366317749,
+              0.19252954423427582,
+              0.24721282720565796,
+              0.2801288366317749
+            ],
+            "choice": 0,
+            "seconds": 0.1842954158782959
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.2801288366317749,
+              0.19252954423427582,
+              0.24721282720565796,
+              0.2801288366317749
+            ],
+            "choice": 0,
+            "seconds": 0.18753433227539062
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.2801288366317749,
+              0.19252954423427582,
+              0.24721282720565796,
+              0.2801288366317749
+            ],
+            "choice": 0,
+            "seconds": 0.18131017684936523
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 0.18540716171264648
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 1.0612881183624268
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 1.0573501586914062
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.30601364374160767,
+              0.18560665845870972,
+              0.2383236587047577,
+              0.2700560986995697
+            ],
+            "choice": 0,
+            "seconds": 0.18547773361206055
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.2885095477104187,
+              0.19828951358795166,
+              0.2246914505958557,
+              0.2885095477104187
+            ],
+            "choice": 0,
+            "seconds": 0.18296575546264648
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.17891335487365723
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.18432354927062988
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.1779334545135498
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.2986334264278412,
+              0.20524755120277405,
+              0.2325759381055832,
+              0.2635430693626404
+            ],
+            "choice": 0,
+            "seconds": 0.1826798915863037
+          }
+        ],
+        "task_only_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.14683011174201965,
+              0.028912562876939774,
+              0.7456648349761963,
+              0.07859249413013458
+            ],
+            "choice": 2,
+            "seconds": 2.0050997734069824
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.2842136323451996,
+              0.32205623388290405,
+              0.17238429188728333,
+              0.22134581208229065
+            ],
+            "choice": 1,
+            "seconds": 1.078176498413086
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.40428435802459717,
+              0.35677969455718994,
+              0.090208038687706,
+              0.1487279236316681
+            ],
+            "choice": 0,
+            "seconds": 0.17980647087097168
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.028228355571627617,
+              0.5669816732406616,
+              0.015109550207853317,
+              0.3896804451942444
+            ],
+            "choice": 1,
+            "seconds": 0.17994999885559082
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.01856435462832451,
+              0.5425299406051636,
+              0.016382984817028046,
+              0.42252275347709656
+            ],
+            "choice": 1,
+            "seconds": 0.17434477806091309
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.04327693581581116,
+              0.4106001555919647,
+              0.0808519572019577,
+              0.4652709364891052
+            ],
+            "choice": 3,
+            "seconds": 0.18023347854614258
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.02458014525473118,
+              0.4937054216861725,
+              0.09721635282039642,
+              0.3844981789588928
+            ],
+            "choice": 1,
+            "seconds": 1.0978174209594727
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.03641735762357712,
+              0.502726137638092,
+              0.017202341929078102,
+              0.44365423917770386
+            ],
+            "choice": 1,
+            "seconds": 1.04909086227417
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.0210246741771698,
+              0.5422334671020508,
+              0.014450033195316792,
+              0.4222918748855591
+            ],
+            "choice": 1,
+            "seconds": 0.1919994354248047
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.02540760673582554,
+              0.6552708148956299,
+              0.24106068909168243,
+              0.07826094329357147
+            ],
+            "choice": 1,
+            "seconds": 0.17043089866638184
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.016065822914242744,
+              0.6831361651420593,
+              0.2513117790222168,
+              0.04948621988296509
+            ],
+            "choice": 1,
+            "seconds": 0.16910052299499512
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.030453870072960854,
+              0.030453870072960854,
+              0.6116823554039001,
+              0.3274099826812744
+            ],
+            "choice": 2,
+            "seconds": 0.16251683235168457
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.01714373752474785,
+              0.024943990632891655,
+              0.5677226185798645,
+              0.39018967747688293
+            ],
+            "choice": 2,
+            "seconds": 0.1595921516418457
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.35877782106399536,
+              0.04855529963970184,
+              0.4606798589229584,
+              0.13198699057102203
+            ],
+            "choice": 2,
+            "seconds": 0.17447352409362793
+          }
+        ]
+      },
+      "theta0": "[private location omitted]",
+      "theta1": "[private location omitted]",
+      "theta2": "[private location omitted]",
+      "caveat": "bounded recipe selector; exploratory 2-transition pilot; unpromoted/regressed candidates explicitly retained, not proof of open-ended RSI or Astra weight improvement"
+    },
+    {
+      "seed": 271,
+      "at": 1792348605.0935407,
+      "r1_validation": {
+        "uniform": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 0.8333333333333334,
+          "qualified_sr_planned": 0.8333333333333334,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 1.0,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 1.0,
+            "val1_1_0_lift": 1.0,
+            "val1_1_0_carry": 1.0,
+            "val1_1_1_lift": 1.0,
+            "val1_1_1_carry": 0.0
+          }
+        },
+        "failure_focused": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 1.0,
+          "qualified_sr_planned": 1.0,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 1.0,
+            "can_in_bin:carry": 1.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 1.0,
+            "val1_1_0_lift": 1.0,
+            "val1_1_0_carry": 1.0,
+            "val1_1_1_lift": 1.0,
+            "val1_1_1_carry": 1.0
+          }
+        },
+        "contrast_focused": {
+          "n": 6,
+          "planned": 6,
+          "qualified_sr": 1.0,
+          "qualified_sr_planned": 1.0,
+          "groups": {
+            "remove_cube_from_tray:lift": 1.0,
+            "remove_cube_from_tray:carry": 1.0,
+            "can_in_bin:lift": 1.0,
+            "can_in_bin:carry": 1.0
+          },
+          "by_scene": {
+            "val1_0_0_lift": 1.0,
+            "val1_0_0_carry": 1.0,
+            "val1_1_0_lift": 1.0,
+            "val1_1_0_carry": 1.0,
+            "val1_1_1_lift": 1.0,
+            "val1_1_1_carry": 1.0
+          }
+        }
+      },
+      "initial_validation": {
+        "n": 6,
+        "planned": 6,
+        "qualified_sr": 0.5,
+        "qualified_sr_planned": 0.5,
+        "groups": {
+          "remove_cube_from_tray:lift": 1.0,
+          "remove_cube_from_tray:carry": 0.0,
+          "can_in_bin:lift": 1.0,
+          "can_in_bin:carry": 0.0
+        },
+        "by_scene": {
+          "val1_0_0_lift": 1.0,
+          "val1_0_0_carry": 0.0,
+          "val1_1_0_lift": 1.0,
+          "val1_1_0_carry": 0.0,
+          "val1_1_1_lift": 1.0,
+          "val1_1_1_carry": 0.0
+        }
+      },
+      "updated_validation": {
+        "n": 6,
+        "planned": 6,
+        "qualified_sr": 1.0,
+        "qualified_sr_planned": 1.0,
+        "groups": {
+          "remove_cube_from_tray:lift": 1.0,
+          "remove_cube_from_tray:carry": 1.0,
+          "can_in_bin:lift": 1.0,
+          "can_in_bin:carry": 1.0
+        },
+        "by_scene": {
+          "val1_0_0_lift": 1.0,
+          "val1_0_0_carry": 1.0,
+          "val1_1_0_lift": 1.0,
+          "val1_1_0_carry": 1.0,
+          "val1_1_1_lift": 1.0,
+          "val1_1_1_carry": 1.0
+        }
+      },
+      "theta1_validation_improved": true,
+      "r1_theta0_recipe": {
+        "can_in_bin:carry": "failure_focused",
+        "can_in_bin:lift": "failure_focused",
+        "remove_cube_from_tray:carry": "failure_focused",
+        "remove_cube_from_tray:lift": "failure_focused"
+      },
+      "r1_oracle_meta_recipe": "failure_focused",
+      "meta_supervision": [
+        {
+          "id": "meta:can_in_bin:carry",
+          "group": "can_in_bin:carry",
+          "prompt": "Choose the next bounded learning recipe for this task group: can_in_bin:carry. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 3, \"move_failures\": 3, \"not_lifted\": 3}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.0,
+            0.5,
+            0.5
+          ],
+          "measured_recipe_scores": [
+            0.5,
+            1.0,
+            1.0
+          ],
+          "tie_count": 2
+        },
+        {
+          "id": "meta:can_in_bin:lift",
+          "group": "can_in_bin:lift",
+          "prompt": "Choose the next bounded learning recipe for this task group: can_in_bin:lift. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 2, \"move_failures\": 2, \"not_lifted\": 2}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tie_count": 3
+        },
+        {
+          "id": "meta:remove_cube_from_tray:carry",
+          "group": "remove_cube_from_tray:carry",
+          "prompt": "Choose the next bounded learning recipe for this task group: remove_cube_from_tray:carry. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 3, \"move_failures\": 3, \"not_lifted\": 3}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tie_count": 3
+        },
+        {
+          "id": "meta:remove_cube_from_tray:lift",
+          "group": "remove_cube_from_tray:lift",
+          "prompt": "Choose the next bounded learning recipe for this task group: remove_cube_from_tray:lift. Measured past execution feedback (training pool only): {\"attempts\": 4, \"failed\": 1, \"move_failures\": 1, \"not_lifted\": 1}. All recipes have identical optimizer, 24 training-example draws and 16 updates. A: uniform draws from eligible observed scenes. B: 4x weight to scenes the current policy failed. C: 4x weight to scenes with measured successful and failed grasp alternatives. Choose A, B, or C to maximize held-out physical performance. No validation outcomes are supplied.",
+          "n_options": 3,
+          "soft_target": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "measured_recipe_scores": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "tie_count": 3
+        }
+      ],
+      "r2_recipes": {
+        "uniform": {
+          "can_in_bin:carry": "uniform",
+          "can_in_bin:lift": "uniform",
+          "remove_cube_from_tray:carry": "uniform",
+          "remove_cube_from_tray:lift": "uniform"
+        },
+        "frozen_proposer": {
+          "can_in_bin:carry": "failure_focused",
+          "can_in_bin:lift": "failure_focused",
+          "remove_cube_from_tray:carry": "failure_focused",
+          "remove_cube_from_tray:lift": "failure_focused"
+        },
+        "updated_proposer": {
+          "can_in_bin:carry": "failure_focused",
+          "can_in_bin:lift": "failure_focused",
+          "remove_cube_from_tray:carry": "failure_focused",
+          "remove_cube_from_tray:lift": "failure_focused"
+        },
+        "task_only_proposer": {
+          "can_in_bin:carry": "failure_focused",
+          "can_in_bin:lift": "failure_focused",
+          "remove_cube_from_tray:carry": "failure_focused",
+          "remove_cube_from_tray:lift": "failure_focused"
+        }
+      },
+      "r2_validation_common_start": {
+        "uniform": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.25,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 0.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 0.0,
+            "val2_0_0_carry": 0.0,
+            "val2_0_1_lift": 1.0,
+            "val2_0_1_carry": 0.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "frozen_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.25,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 0.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 0.0,
+            "val2_0_0_carry": 0.0,
+            "val2_0_1_lift": 1.0,
+            "val2_0_1_carry": 0.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "updated_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.25,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 0.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 0.0,
+            "val2_0_0_carry": 0.0,
+            "val2_0_1_lift": 1.0,
+            "val2_0_1_carry": 0.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        },
+        "task_only_proposer": {
+          "n": 8,
+          "planned": 8,
+          "qualified_sr": 0.25,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.5,
+            "remove_cube_from_tray:carry": 0.0,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.0
+          },
+          "by_scene": {
+            "val2_0_0_lift": 0.0,
+            "val2_0_0_carry": 0.0,
+            "val2_0_1_lift": 1.0,
+            "val2_0_1_carry": 0.0,
+            "val2_1_0_lift": 0.0,
+            "val2_1_0_carry": 0.0,
+            "val2_1_1_lift": 1.0,
+            "val2_1_1_carry": 0.0
+          }
+        }
+      },
+      "test": {
+        "theta0": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.6666666666666666,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        },
+        "theta1": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "uniform": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        },
+        "frozen_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        },
+        "updated_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        },
+        "task_only_proposer": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        }
+      },
+      "test_predictions": {
+        "theta0": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.2388046830892563,
+              0.12782293558120728,
+              0.5055494904518127,
+              0.12782293558120728
+            ],
+            "choice": 2,
+            "seconds": 1.9500784873962402
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.2748091518878937,
+              0.24251823127269745,
+              0.3528619408607483,
+              0.1298106610774994
+            ],
+            "choice": 2,
+            "seconds": 1.0922033786773682
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.4181874692440033,
+              0.17432646453380585,
+              0.2536435127258301,
+              0.15384258329868317
+            ],
+            "choice": 0,
+            "seconds": 0.1797475814819336
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.35289251804351807,
+              0.35289251804351807,
+              0.14710748195648193,
+              0.14710748195648193
+            ],
+            "choice": 0,
+            "seconds": 0.18195343017578125
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.35823798179626465,
+              0.2462131232023239,
+              0.1493358016014099,
+              0.2462131232023239
+            ],
+            "choice": 0,
+            "seconds": 0.17944979667663574
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.22381338477134705,
+              0.1197986751794815,
+              0.2873820662498474,
+              0.36900588870048523
+            ],
+            "choice": 3,
+            "seconds": 0.18162965774536133
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.19215041399002075,
+              0.13206292688846588,
+              0.316802442073822,
+              0.35898420214653015
+            ],
+            "choice": 3,
+            "seconds": 1.0686366558074951
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.2666584551334381,
+              0.18327151238918304,
+              0.2076738178730011,
+              0.34239622950553894
+            ],
+            "choice": 3,
+            "seconds": 1.0427007675170898
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.21309715509414673,
+              0.1464594006538391,
+              0.1292499601840973,
+              0.5111935138702393
+            ],
+            "choice": 3,
+            "seconds": 0.1643681526184082
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.19483131170272827,
+              0.17193801701068878,
+              0.22077280282974243,
+              0.4124578833580017
+            ],
+            "choice": 3,
+            "seconds": 0.16495585441589355
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.23094363510608673,
+              0.14007438719272614,
+              0.14007438719272614,
+              0.4889076352119446
+            ],
+            "choice": 3,
+            "seconds": 0.15954184532165527
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.24977613985538483,
+              0.22042667865753174,
+              0.4118112325668335,
+              0.11798589676618576
+            ],
+            "choice": 2,
+            "seconds": 0.16511774063110352
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.27192074060440063,
+              0.14554868638515472,
+              0.39564234018325806,
+              0.1868882030248642
+            ],
+            "choice": 2,
+            "seconds": 0.16046428680419922
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.24141289293766022,
+              0.16592049598693848,
+              0.24141289293766022,
+              0.3512536883354187
+            ],
+            "choice": 3,
+            "seconds": 0.1642749309539795
+          }
+        ],
+        "theta1": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.265604704618454,
+              0.265604704618454,
+              0.2343953251838684,
+              0.2343953251838684
+            ],
+            "choice": 0,
+            "seconds": 1.9427409172058105
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.2801288366317749,
+              0.2801288366317749,
+              0.19252954423427582,
+              0.24721282720565796
+            ],
+            "choice": 0,
+            "seconds": 1.070906639099121
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.3128364086151123,
+              0.27607715129852295,
+              0.16744926571846008,
+              0.24363723397254944
+            ],
+            "choice": 0,
+            "seconds": 0.18048548698425293
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.2650373578071594,
+              0.34031471610069275,
+              0.1607532948255539,
+              0.23389466106891632
+            ],
+            "choice": 1,
+            "seconds": 0.18196892738342285
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.24852719902992249,
+              0.3191152513027191,
+              0.1507393717765808,
+              0.2816182076931
+            ],
+            "choice": 1,
+            "seconds": 0.17887258529663086
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.24000832438468933,
+              0.30817678570747375,
+              0.21180661022663116,
+              0.24000832438468933
+            ],
+            "choice": 1,
+            "seconds": 0.18291473388671875
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.21101424098014832,
+              0.30702391266822815,
+              0.21101424098014832,
+              0.2709476351737976
+            ],
+            "choice": 1,
+            "seconds": 1.0669817924499512
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.25061070919036865,
+              0.3646364212036133,
+              0.13414224982261658,
+              0.25061070919036865
+            ],
+            "choice": 1,
+            "seconds": 1.0442655086517334
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.24251823127269745,
+              0.3528619408607483,
+              0.1298106610774994,
+              0.2748091518878937
+            ],
+            "choice": 1,
+            "seconds": 0.18044066429138184
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.2733282744884491,
+              0.35096046328544617,
+              0.18785561621189117,
+              0.18785561621189117
+            ],
+            "choice": 1,
+            "seconds": 0.18419599533081055
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.2534646689891815,
+              0.32545506954193115,
+              0.19739848375320435,
+              0.22368179261684418
+            ],
+            "choice": 1,
+            "seconds": 0.1784372329711914
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.24194630980491638,
+              0.24194630980491638,
+              0.24194630980491638,
+              0.27416110038757324
+            ],
+            "choice": 3,
+            "seconds": 0.18420720100402832
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.2263891100883484,
+              0.2565324604511261,
+              0.2263891100883484,
+              0.2906893789768219
+            ],
+            "choice": 3,
+            "seconds": 0.17928576469421387
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.29539206624031067,
+              0.29539206624031067,
+              0.1791643351316452,
+              0.23005156219005585
+            ],
+            "choice": 0,
+            "seconds": 0.18388009071350098
+          }
+        ],
+        "uniform": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.18564271926879883,
+              0.09936736524105072,
+              0.21036072075366974,
+              0.5046291351318359
+            ],
+            "choice": 3,
+            "seconds": 1.9583077430725098
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.1991894543170929,
+              0.13690078258514404,
+              0.05036298185586929,
+              0.6135467290878296
+            ],
+            "choice": 3,
+            "seconds": 1.0802483558654785
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.25838610529899597,
+              0.20123130083084106,
+              0.05765373259782791,
+              0.4827287793159485
+            ],
+            "choice": 3,
+            "seconds": 0.17208147048950195
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.05274505540728569,
+              0.34394100308418274,
+              0.03625111281871796,
+              0.5670627951622009
+            ],
+            "choice": 3,
+            "seconds": 0.17877650260925293
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.035871706902980804,
+              0.3003501296043396,
+              0.027936913073062897,
+              0.6358411908149719
+            ],
+            "choice": 3,
+            "seconds": 0.17639827728271484
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.0379980094730854,
+              0.40851712226867676,
+              0.3605150878429413,
+              0.19296982884407043
+            ],
+            "choice": 1,
+            "seconds": 0.1907656192779541
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.028075609356164932,
+              0.43917644023895264,
+              0.26637396216392517,
+              0.26637396216392517
+            ],
+            "choice": 1,
+            "seconds": 1.059598445892334
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.08552561700344086,
+              0.6319535970687866,
+              0.01908334530889988,
+              0.2634374499320984
+            ],
+            "choice": 1,
+            "seconds": 1.0649995803833008
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.06837564706802368,
+              0.5725022554397583,
+              0.011881905607879162,
+              0.3472401797771454
+            ],
+            "choice": 1,
+            "seconds": 0.17849373817443848
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.07742779701948166,
+              0.7346144914627075,
+              0.060300830751657486,
+              0.12765684723854065
+            ],
+            "choice": 1,
+            "seconds": 0.20394039154052734
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.08283661305904388,
+              0.6120843887329102,
+              0.10636430978775024,
+              0.1987147033214569
+            ],
+            "choice": 1,
+            "seconds": 0.34939146041870117
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.07797133922576904,
+              0.06880946457386017,
+              0.1134476363658905,
+              0.7397714853286743
+            ],
+            "choice": 3,
+            "seconds": 0.267855167388916
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.05538717284798622,
+              0.06276188790798187,
+              0.11725464463233948,
+              0.7645963430404663
+            ],
+            "choice": 3,
+            "seconds": 0.2014329433441162
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.2409784197807312,
+              0.3973062336444855,
+              0.08865100890398026,
+              0.2730643153190613
+            ],
+            "choice": 1,
+            "seconds": 0.20647788047790527
+          }
+        ],
+        "frozen_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 2.0674126148223877
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.21519045531749725,
+              0.21519045531749725,
+              0.16759048402309418,
+              0.4020286798477173
+            ],
+            "choice": 3,
+            "seconds": 1.0818984508514404
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 0.17218661308288574
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.17306828498840332
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.184688538312912,
+              0.20927953720092773,
+              0.16298708319664001,
+              0.4430447816848755
+            ],
+            "choice": 3,
+            "seconds": 0.1648404598236084
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.21049341559410095,
+              0.21049341559410095,
+              0.1857597827911377,
+              0.3932534456253052
+            ],
+            "choice": 3,
+            "seconds": 0.16980862617492676
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.18076567351818085,
+              0.20483435690402985,
+              0.18076567351818085,
+              0.43363431096076965
+            ],
+            "choice": 3,
+            "seconds": 1.0506296157836914
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.20253421366214752,
+              0.22950133681297302,
+              0.13919958472251892,
+              0.4287649095058441
+            ],
+            "choice": 3,
+            "seconds": 1.0727481842041016
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16921615600585938
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.17103838920593262
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.20425668358802795,
+              0.20425668358802795,
+              0.1590752750635147,
+              0.43241140246391296
+            ],
+            "choice": 3,
+            "seconds": 0.16513347625732422
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 0.17166423797607422
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.1852237582206726,
+              0.1852237582206726,
+              0.1852237582206726,
+              0.4443287253379822
+            ],
+            "choice": 3,
+            "seconds": 0.16915011405944824
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.17756223678588867
+          }
+        ],
+        "updated_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 2.0067954063415527
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.21519045531749725,
+              0.21519045531749725,
+              0.16759048402309418,
+              0.4020286798477173
+            ],
+            "choice": 3,
+            "seconds": 1.0704100131988525
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 0.16566181182861328
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16682672500610352
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.184688538312912,
+              0.20927953720092773,
+              0.16298708319664001,
+              0.4430447816848755
+            ],
+            "choice": 3,
+            "seconds": 0.15873932838439941
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.21049341559410095,
+              0.21049341559410095,
+              0.1857597827911377,
+              0.3932534456253052
+            ],
+            "choice": 3,
+            "seconds": 0.1638634204864502
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.18076567351818085,
+              0.20483435690402985,
+              0.18076567351818085,
+              0.43363431096076965
+            ],
+            "choice": 3,
+            "seconds": 1.0421490669250488
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.20253421366214752,
+              0.22950133681297302,
+              0.13919958472251892,
+              0.4287649095058441
+            ],
+            "choice": 3,
+            "seconds": 1.069678544998169
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16496992111206055
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16544222831726074
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.20425668358802795,
+              0.20425668358802795,
+              0.1590752750635147,
+              0.43241140246391296
+            ],
+            "choice": 3,
+            "seconds": 0.1609935760498047
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 0.16649913787841797
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.1852237582206726,
+              0.1852237582206726,
+              0.1852237582206726,
+              0.4443287253379822
+            ],
+            "choice": 3,
+            "seconds": 0.15997982025146484
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16582345962524414
+          }
+        ],
+        "task_only_proposer": [
+          {
+            "id": "test_0_1_lift",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 2.0150949954986572
+          },
+          {
+            "id": "test_0_1_carry",
+            "probabilities": [
+              0.21519045531749725,
+              0.21519045531749725,
+              0.16759048402309418,
+              0.4020286798477173
+            ],
+            "choice": 3,
+            "seconds": 1.0783586502075195
+          },
+          {
+            "id": "test_0_2_lift",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 0.16978931427001953
+          },
+          {
+            "id": "test_0_2_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16901445388793945
+          },
+          {
+            "id": "test_0_3_lift",
+            "probabilities": [
+              0.184688538312912,
+              0.20927953720092773,
+              0.16298708319664001,
+              0.4430447816848755
+            ],
+            "choice": 3,
+            "seconds": 0.16197609901428223
+          },
+          {
+            "id": "test_0_3_carry",
+            "probabilities": [
+              0.21049341559410095,
+              0.21049341559410095,
+              0.1857597827911377,
+              0.3932534456253052
+            ],
+            "choice": 3,
+            "seconds": 0.16817975044250488
+          },
+          {
+            "id": "test_1_0_lift",
+            "probabilities": [
+              0.18076567351818085,
+              0.20483435690402985,
+              0.18076567351818085,
+              0.43363431096076965
+            ],
+            "choice": 3,
+            "seconds": 1.056032657623291
+          },
+          {
+            "id": "test_1_0_carry",
+            "probabilities": [
+              0.20253421366214752,
+              0.22950133681297302,
+              0.13919958472251892,
+              0.4287649095058441
+            ],
+            "choice": 3,
+            "seconds": 1.0681676864624023
+          },
+          {
+            "id": "test_1_1_lift",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16789674758911133
+          },
+          {
+            "id": "test_1_1_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.16831254959106445
+          },
+          {
+            "id": "test_1_2_lift",
+            "probabilities": [
+              0.20425668358802795,
+              0.20425668358802795,
+              0.1590752750635147,
+              0.43241140246391296
+            ],
+            "choice": 3,
+            "seconds": 0.16353893280029297
+          },
+          {
+            "id": "test_1_2_carry",
+            "probabilities": [
+              0.20002013444900513,
+              0.20002013444900513,
+              0.17651712894439697,
+              0.4234426021575928
+            ],
+            "choice": 3,
+            "seconds": 0.1671905517578125
+          },
+          {
+            "id": "test_1_3_lift",
+            "probabilities": [
+              0.1852237582206726,
+              0.1852237582206726,
+              0.1852237582206726,
+              0.4443287253379822
+            ],
+            "choice": 3,
+            "seconds": 0.16704559326171875
+          },
+          {
+            "id": "test_1_3_carry",
+            "probabilities": [
+              0.19884870946407318,
+              0.2253251075744629,
+              0.15486353635787964,
+              0.42096269130706787
+            ],
+            "choice": 3,
+            "seconds": 0.17150473594665527
+          }
+        ]
+      },
+      "theta0": "[private location omitted]",
+      "theta1": "[private location omitted]",
+      "theta2": "[private location omitted]",
+      "caveat": "bounded recipe selector; exploratory 2-transition pilot; unpromoted/regressed candidates explicitly retained, not proof of open-ended RSI or Astra weight improvement"
+    }
+  ],
+  "students": [
+    {
+      "seed": 42,
+      "model": {
+        "repo": "Qwen/Qwen3.5-0.8B",
+        "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+        "at": 1792341407.161958
+      },
+      "test": {
+        "teacher_initial": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.35714285714285715,
+          "qualified_sr_planned": 0.3125,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 0.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "teacher_updated": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "physical_sft": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.35714285714285715,
+          "qualified_sr_planned": 0.3125,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.6666666666666666,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.25,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 0.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        }
+      },
+      "at": 1792348965.6949239,
+      "same_train_scene_draw_count": 24,
+      "steps": 16,
+      "caveat": "candidate-choice distillation, not full Guava policy distillation"
+    },
+    {
+      "seed": 137,
+      "model": {
+        "repo": "Qwen/Qwen3.5-0.8B",
+        "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+        "at": 1792341407.161958
+      },
+      "test": {
+        "teacher_initial": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        },
+        "teacher_updated": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.2857142857142857,
+          "qualified_sr_planned": 0.25,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.6666666666666666,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.0,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 1.0,
+            "test_1_0_lift": 0.0,
+            "test_1_0_carry": 0.0,
+            "test_1_1_lift": 0.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 0.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "physical_sft": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.6666666666666666,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.5,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 0.0,
+            "test_0_2_lift": 1.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 0.0,
+            "test_1_3_carry": 1.0
+          }
+        }
+      },
+      "at": 1792349144.296494,
+      "same_train_scene_draw_count": 24,
+      "steps": 16,
+      "caveat": "candidate-choice distillation, not full Guava policy distillation"
+    },
+    {
+      "seed": 271,
+      "model": {
+        "repo": "Qwen/Qwen3.5-0.8B",
+        "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+        "at": 1792341407.161958
+      },
+      "test": {
+        "teacher_initial": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.3333333333333333,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.5
+          },
+          "by_scene": {
+            "test_0_1_lift": 0.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 0.0,
+            "test_0_3_lift": 1.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 1.0
+          }
+        },
+        "teacher_updated": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        },
+        "physical_sft": {
+          "n": 14,
+          "planned": 16,
+          "qualified_sr": 0.5,
+          "qualified_sr_planned": 0.4375,
+          "groups": {
+            "remove_cube_from_tray:lift": 0.3333333333333333,
+            "remove_cube_from_tray:carry": 0.6666666666666666,
+            "can_in_bin:lift": 0.75,
+            "can_in_bin:carry": 0.25
+          },
+          "by_scene": {
+            "test_0_1_lift": 1.0,
+            "test_0_1_carry": 1.0,
+            "test_0_2_lift": 0.0,
+            "test_0_2_carry": 1.0,
+            "test_0_3_lift": 0.0,
+            "test_0_3_carry": 0.0,
+            "test_1_0_lift": 1.0,
+            "test_1_0_carry": 1.0,
+            "test_1_1_lift": 1.0,
+            "test_1_1_carry": 0.0,
+            "test_1_2_lift": 0.0,
+            "test_1_2_carry": 0.0,
+            "test_1_3_lift": 1.0,
+            "test_1_3_carry": 0.0
+          }
+        }
+      },
+      "at": 1792348790.6426053,
+      "same_train_scene_draw_count": 24,
+      "steps": 16,
+      "caveat": "candidate-choice distillation, not full Guava policy distillation"
+    }
+  ],
+  "claim_scope": "exploratory controlled simulation pilot; bounded learning-recipe selection; no real robot or open-ended RSI claim",
+  "physics": {
+    "scenes_planned": 72,
+    "scenes_decision_valid": 68,
+    "excluded_perception": [
+      {
+        "id": "val1_0_1_lift",
+        "reason": "No valid RGB-D estimate; physical/perception failure, not policy example",
+        "split": "val1"
+      },
+      {
+        "id": "val1_0_1_carry",
+        "reason": "No valid RGB-D estimate; physical/perception failure, not policy example",
+        "split": "val1"
+      },
+      {
+        "id": "test_0_0_lift",
+        "reason": "No valid RGB-D estimate; physical/perception failure, not policy example",
+        "split": "test"
+      },
+      {
+        "id": "test_0_0_carry",
+        "reason": "No valid RGB-D estimate; physical/perception failure, not policy example",
+        "split": "test"
+      }
+    ],
+    "action_outcomes": 272,
+    "qualified_actions": 116,
+    "raw_success_actions": 116,
+    "oracle_upper_bound": 0.8088235294117647,
+    "split_parent_disjoint": true
+  },
+  "fixed_candidate_baseline": {
+    "chosen_on": "pool1+pool2 only",
+    "physical_action": 0,
+    "actual_executed_candidates": 272,
+    "test_score": "deferred until all lineages frozen",
+    "test_success": 7,
+    "test_planned": 16,
+    "per_scene_oracle_test_success": 11
+  }
+}

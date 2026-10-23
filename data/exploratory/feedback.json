@@ -1,0 +1,317 @@
+{
+  "at": 1792376388.7484787,
+  "completed_model_jobs": 9,
+  "expected_model_jobs": 9,
+  "claim_scope": "frozen Qwen feedback-use mechanism; no weight learning or RSI claim",
+  "physics": {
+    "conditions_planned": 96,
+    "valid_conditions": 80,
+    "executed_candidates": 320,
+    "qualified_candidates": 119,
+    "excluded": [
+      {
+        "id": "support_0_2_lift",
+        "split": "support",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "support_0_2_carry",
+        "split": "support",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "support_0_3_lift",
+        "split": "support",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "support_0_3_carry",
+        "split": "support",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "support_0_5_lift",
+        "split": "support",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "support_0_5_carry",
+        "split": "support",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "test_0_0_lift",
+        "split": "test",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "test_0_0_carry",
+        "split": "test",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "test_0_3_lift",
+        "split": "test",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "test_0_3_carry",
+        "split": "test",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "test_0_4_lift",
+        "split": "test",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "test_0_4_carry",
+        "split": "test",
+        "reason": "Insufficient visible depth"
+      },
+      {
+        "id": "test_0_11_lift",
+        "split": "test",
+        "reason": "No distinct red target on the known tabletop"
+      },
+      {
+        "id": "test_0_11_carry",
+        "split": "test",
+        "reason": "No distinct red target on the known tabletop"
+      },
+      {
+        "id": "test_0_14_lift",
+        "split": "test",
+        "reason": "No distinct red target on the known tabletop"
+      },
+      {
+        "id": "test_0_14_carry",
+        "split": "test",
+        "reason": "No distinct red target on the known tabletop"
+      }
+    ],
+    "support_only_fixed": {
+      "remove_cube_from_tray:lift": {
+        "action": 0,
+        "support_rates": {
+          "0": 0.5,
+          "1": null,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "probe_counts": {
+          "0": 2,
+          "1": 0,
+          "2": 2,
+          "3": 1
+        }
+      },
+      "remove_cube_from_tray:carry": {
+        "action": 0,
+        "support_rates": {
+          "0": 0.5,
+          "1": null,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "probe_counts": {
+          "0": 2,
+          "1": 0,
+          "2": 2,
+          "3": 1
+        }
+      },
+      "can_in_bin:lift": {
+        "action": 0,
+        "support_rates": {
+          "0": 1.0,
+          "1": 0.5,
+          "2": 0.5,
+          "3": 0.0
+        },
+        "probe_counts": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
+        }
+      },
+      "can_in_bin:carry": {
+        "action": 0,
+        "support_rates": {
+          "0": 1.0,
+          "1": 0.5,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "probe_counts": {
+          "0": 2,
+          "1": 2,
+          "2": 2,
+          "3": 2
+        }
+      }
+    },
+    "parent_splits_disjoint": true,
+    "old_formal_seeds_disjoint": true
+  },
+  "arms": {
+    "none": {
+      "by_presentation": [
+        {
+          "transfer_qualified_sr_planned": 0.21875,
+          "retry_cumulative_sr_planned": 0.46875,
+          "retry_rescue_rate_valid_first_failures": 0.29411764705882354,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        },
+        {
+          "transfer_qualified_sr_planned": 0.234375,
+          "retry_cumulative_sr_planned": 0.5,
+          "retry_rescue_rate_valid_first_failures": 0.35294117647058826,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        },
+        {
+          "transfer_qualified_sr_planned": 0.359375,
+          "retry_cumulative_sr_planned": 0.53125,
+          "retry_rescue_rate_valid_first_failures": 0.4117647058823529,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        }
+      ],
+      "mean": {
+        "transfer_qualified_sr_planned": 0.2708333333333333,
+        "retry_cumulative_sr_planned": 0.5,
+        "retry_rescue_rate_valid_first_failures": 0.35294117647058826,
+        "valid_queries": 54.0,
+        "first_failures_valid": 34.0
+      }
+    },
+    "binary": {
+      "by_presentation": [
+        {
+          "transfer_qualified_sr_planned": 0.296875,
+          "retry_cumulative_sr_planned": 0.46875,
+          "retry_rescue_rate_valid_first_failures": 0.29411764705882354,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        },
+        {
+          "transfer_qualified_sr_planned": 0.296875,
+          "retry_cumulative_sr_planned": 0.484375,
+          "retry_rescue_rate_valid_first_failures": 0.3235294117647059,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        },
+        {
+          "transfer_qualified_sr_planned": 0.34375,
+          "retry_cumulative_sr_planned": 0.5,
+          "retry_rescue_rate_valid_first_failures": 0.35294117647058826,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        }
+      ],
+      "mean": {
+        "transfer_qualified_sr_planned": 0.3125,
+        "retry_cumulative_sr_planned": 0.484375,
+        "retry_rescue_rate_valid_first_failures": 0.3235294117647059,
+        "valid_queries": 54.0,
+        "first_failures_valid": 34.0
+      }
+    },
+    "physical": {
+      "by_presentation": [
+        {
+          "transfer_qualified_sr_planned": 0.3125,
+          "retry_cumulative_sr_planned": 0.46875,
+          "retry_rescue_rate_valid_first_failures": 0.29411764705882354,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        },
+        {
+          "transfer_qualified_sr_planned": 0.328125,
+          "retry_cumulative_sr_planned": 0.5,
+          "retry_rescue_rate_valid_first_failures": 0.35294117647058826,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        },
+        {
+          "transfer_qualified_sr_planned": 0.375,
+          "retry_cumulative_sr_planned": 0.5625,
+          "retry_rescue_rate_valid_first_failures": 0.47058823529411764,
+          "valid_queries": 54,
+          "first_failures_valid": 34
+        }
+      ],
+      "mean": {
+        "transfer_qualified_sr_planned": 0.3385416666666667,
+        "retry_cumulative_sr_planned": 0.5104166666666666,
+        "retry_rescue_rate_valid_first_failures": 0.37254901960784315,
+        "valid_queries": 54.0,
+        "first_failures_valid": 34.0
+      }
+    }
+  },
+  "paired_differences": [
+    {
+      "left": "physical",
+      "right": "binary",
+      "mode": "transfer",
+      "difference_pp": 2.6041666666666665,
+      "exploratory_95pct_cluster_ci_pp": [
+        -3.125,
+        8.333333333333332
+      ],
+      "independent_layouts": 32,
+      "permutations_averaged": 3,
+      "excluded_conditions_counted_as_failure": true
+    },
+    {
+      "left": "physical",
+      "right": "none",
+      "mode": "transfer",
+      "difference_pp": 6.770833333333333,
+      "exploratory_95pct_cluster_ci_pp": [
+        -0.5208333333333333,
+        14.583333333333332
+      ],
+      "independent_layouts": 32,
+      "permutations_averaged": 3,
+      "excluded_conditions_counted_as_failure": true
+    },
+    {
+      "left": "binary",
+      "right": "none",
+      "mode": "transfer",
+      "difference_pp": 4.166666666666666,
+      "exploratory_95pct_cluster_ci_pp": [
+        -1.5625,
+        9.895833333333332
+      ],
+      "independent_layouts": 32,
+      "permutations_averaged": 3,
+      "excluded_conditions_counted_as_failure": true
+    },
+    {
+      "left": "physical",
+      "right": "binary",
+      "mode": "retry",
+      "difference_pp": 2.6041666666666665,
+      "exploratory_95pct_cluster_ci_pp": [
+        0.0,
+        5.729166666666666
+      ],
+      "independent_layouts": 32,
+      "permutations_averaged": 3,
+      "excluded_conditions_counted_as_failure": true
+    }
+  ],
+  "baselines": {
+    "transfer_support_probe_fixed_sr": 0.4375,
+    "transfer_random_expected_sr": 0.3125,
+    "per_scene_oracle_upper_bound_sr": 0.59375,
+    "retry_random_expected_cumulative_sr": 0.5
+  },
+  "interpretation": "No clear positive transfer evidence from detailed versus binary feedback under this frozen Qwen/candidate protocol; not a refutation of other models or richer action spaces"
+}

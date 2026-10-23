@@ -1,0 +1,55 @@
+{
+  "source_sha256": "ecc8f33dffa24a5e431ef3466967bfc608fb026e2be0a3bea5ddc319b79e6c14",
+  "candidate_sha256": "a6f3177d776e20c5de960fbcf1e5a26d9682397608b9536057808d2dad2e9b8d",
+  "change": "MuJoCo convex hull of the already verified original visual mesh for each whole finger; retain CAD tip and middlepad contact registration/friction, inertials, actuators, TCP. Unlike earlier failed convex8 this retains tip contact and has no inter-slice seams. Convex hull still conservatively fills CAD cavities. Candidate requires regression.",
+  "geometry": [
+    {
+      "link": "link7",
+      "before": {
+        "name": "link7_collision",
+        "type": "box",
+        "size": "0.028 0.03825 0.01125",
+        "pos": "0 -0.03825 0.01525",
+        "contype": "1",
+        "conaffinity": "1",
+        "group": "0",
+        "solref": "0.02 1",
+        "friction": "1 0.005 0.0001"
+      },
+      "after": {
+        "name": "link7_collision",
+        "type": "mesh",
+        "contype": "1",
+        "conaffinity": "1",
+        "group": "0",
+        "solref": "0.02 1",
+        "friction": "1 0.005 0.0001",
+        "mesh": "link7_vis"
+      }
+    },
+    {
+      "link": "link8",
+      "before": {
+        "name": "link8_collision",
+        "type": "box",
+        "size": "0.028 0.03825 0.01125",
+        "pos": "0 -0.03825 0.01525",
+        "contype": "1",
+        "conaffinity": "1",
+        "group": "0",
+        "solref": "0.02 1",
+        "friction": "1 0.005 0.0001"
+      },
+      "after": {
+        "name": "link8_collision",
+        "type": "mesh",
+        "contype": "1",
+        "conaffinity": "1",
+        "group": "0",
+        "solref": "0.02 1",
+        "friction": "1 0.005 0.0001",
+        "mesh": "link8_vis"
+      }
+    }
+  ]
+}

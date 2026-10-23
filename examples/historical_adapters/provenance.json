@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "path": "contact_path_v33.py",
+      "source_sha256": "ca031c47a00a09632857da6701be5338ddc951bbff8043bc0d40dbe52f492435",
+      "status": "historical original adapter; not a supported turnkey integration",
+      "export_sha256": "ca031c47a00a09632857da6701be5338ddc951bbff8043bc0d40dbe52f492435"
+    },
+    {
+      "path": "robot_self_filter_v2.py",
+      "source_sha256": "c56c87e6a5268a4ffa2ec935ba2197360a3693e21200e35f9b6d2c118c95b7ea",
+      "status": "historical original adapter; not a supported turnkey integration",
+      "export_sha256": "c56c87e6a5268a4ffa2ec935ba2197360a3693e21200e35f9b6d2c118c95b7ea"
+    },
+    {
+      "path": "visible_approach_v38.py",
+      "source_sha256": "d38916aa08082c5ec22be7bfa0864a7f13c17af56b83d49afb32259402a35419",
+      "status": "historical original adapter; not a supported turnkey integration",
+      "export_sha256": "d38916aa08082c5ec22be7bfa0864a7f13c17af56b83d49afb32259402a35419"
+    },
+    {
+      "path": "branch_eligibility.py",
+      "source_sha256": "08a791903844b32a1f7dc201603c2bb11b58d9540a5949ca65ca83897d873ca0",
+      "status": "historical original adapter; not a supported turnkey integration",
+      "export_sha256": "08a791903844b32a1f7dc201603c2bb11b58d9540a5949ca65ca83897d873ca0"
+    }
+  ],
+  "third_party_code_or_mesh_vendored": false,
+  "export_transformation": "Text line endings canonicalized to LF for cross-platform Git checksums; scientific behavior unchanged. Original hashes identify retained source bytes; exported hashes are separately recorded."
+}

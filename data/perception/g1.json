@@ -1,0 +1,2035 @@
+{
+  "at": 1792702110.5201182,
+  "scope": "Whole-sequence qualification INCLUDING common initial home/observation prefix, fixed2mm threshold. Raw after-parent counts and audit remain immutable. No methods rerun or seed replacement.",
+  "why_additional": "Initial scorer covered each treatment after parent observation, but omitted shared setup_home depth from each method label; all-substep audit retained it. Apply same original2mm criterion to shared prefix for every method.",
+  "raw_report_sha256": "559104c7ea3d206209e31aec1301506375f92cba6c07f3f4e6231ae12f7f406f",
+  "common_prefix_unsafe": [
+    {
+      "layout": "G1_020",
+      "task": "remove_cube_from_tray",
+      "common_prefix_max_external_depth_m": 0.002917016947231962
+    }
+  ],
+  "totals": {
+    "D": {
+      "valid": 32,
+      "total": 48,
+      "extra_segmentations": 0
+    },
+    "R": {
+      "valid": 38,
+      "total": 48,
+      "extra_segmentations": 0
+    },
+    "O": {
+      "valid": 37,
+      "total": 48,
+      "extra_segmentations": 41
+    },
+    "H": {
+      "valid": 39,
+      "total": 48,
+      "extra_segmentations": 1
+    }
+  },
+  "tasks": {
+    "can_in_bin": {
+      "layouts": 24,
+      "counts": {
+        "D": 15,
+        "R": 16,
+        "O": 14,
+        "H": 16
+      }
+    },
+    "remove_cube_from_tray": {
+      "layouts": 24,
+      "counts": {
+        "D": 17,
+        "R": 22,
+        "O": 23,
+        "H": 23
+      }
+    }
+  },
+  "contrasts": {
+    "R-D": {
+      "rescued": 7,
+      "lost": 1,
+      "difference_pp": 12.5,
+      "exact_mcnemar_p": 0.0703125,
+      "holm_p": 0.140625
+    },
+    "O-D": {
+      "rescued": 7,
+      "lost": 2,
+      "difference_pp": 10.416666666666666,
+      "exact_mcnemar_p": 0.1796875,
+      "holm_p": 0.1796875
+    }
+  },
+  "gate_passed": true,
+  "oracle_union": 39,
+  "H_matches_union_each_layout": true,
+  "rows": [
+    {
+      "layout": "G1_000",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261026,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 55.407493529841304
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 55.615646469872445
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 75.13414651481435
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 55.44450343074277
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_001",
+      "task": "can_in_bin",
+      "seed": 4062260018,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 33.69316002819687
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 33.75434674927965
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 134.82497430918738
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 33.88596963463351
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_002",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261046,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 32.27180696511641
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 32.332532056607306
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 148.75113181304187
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 32.242130080703646
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_003",
+      "task": "can_in_bin",
+      "seed": 4062260004,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 36.88679231517017
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 37.51830229675397
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 71.8217613119632
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 37.09391081286594
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_004",
+      "task": "can_in_bin",
+      "seed": 4062260002,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 35.482478816993535
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 35.604447678197175
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 69.84682736499235
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 35.428823633119464
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_005",
+      "task": "can_in_bin",
+      "seed": 4062260023,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 39.82963600102812
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 39.28100679302588
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 155.48566778795794
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 39.261559473350644
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_006",
+      "task": "can_in_bin",
+      "seed": 4062260014,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 39.464738016948104
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.4503901489079
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 139.69786391360685
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.56015122216195
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_007",
+      "task": "can_in_bin",
+      "seed": 4062260013,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 54.47021421883255
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 44.577947104815394
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 167.99720948608592
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 44.79164530709386
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_008",
+      "task": "can_in_bin",
+      "seed": 4062260012,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "initialization_blocked",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": null,
+        "R": null,
+        "O": null,
+        "H": null
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_009",
+      "task": "can_in_bin",
+      "seed": 4062260009,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 70.4031463060528
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 433.92630402510986
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 79.94298286782578
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 36.78820964880288
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_010",
+      "task": "can_in_bin",
+      "seed": 4062260022,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "initialization_blocked",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": null,
+        "R": null,
+        "O": null,
+        "H": null
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_011",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261043,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 30.733122423756868
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.16071713156998
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 648.5909408847801
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.798772647976875
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_012",
+      "task": "can_in_bin",
+      "seed": 4062260021,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 29.566653145942837
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 29.334709328133613
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 149.04136573616415
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 30.51831896742806
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0009886301746259046
+    },
+    {
+      "layout": "G1_013",
+      "task": "can_in_bin",
+      "seed": 4062260019,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": true,
+        "O": false,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 90.5249789999798
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 36.472875870764256
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 163.76799302408472
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.03912241430953
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": false,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_014",
+      "task": "can_in_bin",
+      "seed": 4062260003,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 37.501504404935986
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 40.10243429010734
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 71.79824273614213
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 36.18445243733004
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_015",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261045,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 12.514571859035641
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 32.58801649091765
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 158.39699110528454
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 32.46591129293665
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_016",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261042,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 37.2162704882212
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 37.206360981334
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 150.32462630793452
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 37.51675644610077
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_017",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261027,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 51.031646692194045
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 51.49122727708891
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 71.37185150478035
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 50.784052529837936
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_018",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261035,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 60.28128317510709
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 60.98041168274358
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 81.11938963923603
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 60.70160274300724
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_019",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261038,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.015408245380968
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 30.767534140963107
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 164.64452219102532
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 30.87073500826955
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_020",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261047,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 12.543387604877353
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 34.465658876113594
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 155.39408521493897
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 34.42841121274978
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.002917016947231962
+    },
+    {
+      "layout": "G1_021",
+      "task": "can_in_bin",
+      "seed": 4062260008,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 43.192394031211734
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 43.258178072981536
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 78.69188780197874
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 43.87267498811707
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_022",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261028,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 50.765576069708914
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 51.297716062981635
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 71.09782789507881
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 51.149393553845584
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_023",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261036,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 12.496417523827404
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.147238805890083
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 157.7665816200897
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.407637242693454
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_024",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261032,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 54.158263213932514
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 54.57104941783473
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 74.05491123022512
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 54.659403029829264
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_025",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261031,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 93.34285296639428
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 141.65055547794327
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 124.72746177762747
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 83.88265055138618
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_026",
+      "task": "can_in_bin",
+      "seed": 4062260001,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "initialization_blocked",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": null,
+        "R": null,
+        "O": null,
+        "H": null
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_027",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261029,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 92.75659219594672
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 133.11796523164958
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 78.0622237790376
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 228.3758802949451
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_028",
+      "task": "can_in_bin",
+      "seed": 4062260005,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 36.6134904390201
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 36.5161915961653
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 147.23545159213245
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 36.44916197191924
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_029",
+      "task": "can_in_bin",
+      "seed": 4062260000,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 57.152447377797216
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 60.57013570331037
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 92.05468872794881
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 55.79281732393429
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_030",
+      "task": "can_in_bin",
+      "seed": 4062260006,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "initialization_blocked",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": null,
+        "R": null,
+        "O": null,
+        "H": null
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_031",
+      "task": "can_in_bin",
+      "seed": 4062260017,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": false,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 49.64990677172318
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 161.7483796197921
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 852.6392828621902
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 258.061523724813
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": false,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_032",
+      "task": "can_in_bin",
+      "seed": 4062260020,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "initialization_blocked",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": null,
+        "R": null,
+        "O": null,
+        "H": null
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_033",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261039,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 12.219292240217328
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.021969833876938
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 151.12769346218556
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.25973842991516
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_034",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261044,
+      "planned_occlusion": "high",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 12.554226293228567
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 187.77881604479626
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 153.68224871670827
+        },
+        "H": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 155.54693165421486
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_035",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261037,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 12.085009476169944
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 33.53878332627937
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 155.533635254018
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 33.532695902045816
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_036",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261034,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 53.392760588787496
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 53.23894935986027
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 73.1067842580378
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 53.29830159712583
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_037",
+      "task": "can_in_bin",
+      "seed": 4062260010,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 35.810477481689304
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 35.8077920419164
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 69.01773999491706
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 35.688217429444194
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_038",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261040,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 108.13602087087929
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 48.91545724729076
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 461.78763373801485
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 48.581763135269284
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_039",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261041,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 26.0547957951203
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 26.074087998829782
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 12.199999999998699,
+          "wall_seconds": 165.6079624160193
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 26.09354723384604
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_040",
+      "task": "can_in_bin",
+      "seed": 4062260015,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 28.668540658894926
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 28.59315708698705
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 6.600000000002069,
+          "wall_seconds": 136.63904677098617
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 28.814405280165374
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_041",
+      "task": "can_in_bin",
+      "seed": 4062260011,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 31.342594798188657
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 34.82407950377092
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 68.20650314213708
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 34.70222628721967
+        }
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_042",
+      "task": "can_in_bin",
+      "seed": 4062260016,
+      "planned_occlusion": "high",
+      "planned_clearance": "open",
+      "state": "initialization_blocked",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": null,
+        "R": null,
+        "O": null,
+        "H": null
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_043",
+      "task": "can_in_bin",
+      "seed": 4062260007,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "initialization_blocked",
+      "valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "cost": {
+        "D": null,
+        "R": null,
+        "O": null,
+        "H": null
+      },
+      "parent_local_valid": {
+        "D": false,
+        "R": false,
+        "O": false,
+        "H": false
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_044",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261030,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 48.717969982884824
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 49.06091711577028
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 68.61955014802516
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 48.86923605389893
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_045",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261033,
+      "planned_occlusion": "low",
+      "planned_clearance": "narrow",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.74266012525186
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.44244480319321
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 58.35331482300535
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.491742237936705
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_046",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261024,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.90426503587514
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.953272155020386
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 58.29769893316552
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 38.89682004088536
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    },
+    {
+      "layout": "G1_047",
+      "task": "remove_cube_from_tray",
+      "seed": 4062261025,
+      "planned_occlusion": "low",
+      "planned_clearance": "open",
+      "state": "completed",
+      "valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "cost": {
+        "D": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 42.353073235135525
+        },
+        "R": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 42.26491330098361
+        },
+        "O": {
+          "extra_segmentations": 1,
+          "sensing_sim_seconds": 0.699999999999612,
+          "wall_seconds": 62.10704852594063
+        },
+        "H": {
+          "extra_segmentations": 0,
+          "sensing_sim_seconds": 0.0,
+          "wall_seconds": 42.296341818757355
+        }
+      },
+      "parent_local_valid": {
+        "D": true,
+        "R": true,
+        "O": true,
+        "H": true
+      },
+      "common_prefix_max_external_depth_m": 0.0
+    }
+  ],
+  "all8_repeats_raw_after_parent_equal": true,
+  "cautions": [
+    "Planned occlusion strata not yet proven by measured occlusion",
+    "Shared-server wall times are not isolated benchmarks",
+    "Source/asset unchanged and canonical replay audit are separate from whole-sequence qualification",
+    "Local and whole-sequence results both reported; never describe all episodes as collision-free"
+  ]
+}

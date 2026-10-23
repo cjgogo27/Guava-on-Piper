@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77", "packaging>=24.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guava-piper-audit"
+version = "0.1.0"
+description = "Offline evidence audits for a Guava-to-Piper migration"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+guava-piper-audit = "guava_piper_audit.reproduce:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

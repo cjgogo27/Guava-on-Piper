@@ -1,0 +1,9 @@
+{
+  "world_size": 8,
+  "exit_code": 0,
+  "global_step": 99,
+  "epoch": 3.0,
+  "final_loss": 0.16704077,
+  "model_parameter_info": "Qwen3_5ForConditionalGeneration: 4539.2655M Params (4205.7513M Trainable [92.6527%]), 0.0001M Buffers.",
+  "limitations": "Single training run; no training-seed replication. Training loss is not task success."
+}

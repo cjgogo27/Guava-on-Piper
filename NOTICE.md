@@ -1,0 +1,10 @@
+# Attribution and release boundaries
+
+- Upstream: [Guava](https://github.com/hdacnw/guava-release), study commit `8eeed908bef4fb63c8bfc7c4e2fa2f5684eb067f`. The original paper and implementation belong to their authors. This repository is an independent Piper adaptation/evidence project, not an official release.
+- The author robosuite fork was recorded at `3318cd767039a3bad0514b50f08e89e4cad1b1a7`; SAM3 source at `967fdd651f71ca14949122fed4c918a778ca9334` in the early source snapshot. These hashes describe that snapshot, not blanket version equality across every later experiment.
+- MuJoCo, robosuite, Piper CAD, object meshes, SAM3 and Qwen each retain their own licenses/access terms. No code, CAD mesh, binary compiled model or checkpoint from those projects is redistributed here.
+- The four `assets/diagnostics` images are own simulation recordings used as diagnostic illustrations. They are not a licensed CAD/model distribution and do not establish general performance. Their visual assets derive from the original runtime; they are excluded from the repository's software/data license grant. Contact the repository owner for reuse beyond scholarly illustration.
+- Some historical trajectories were unreviewed, ambiguous or rejected, and some used extended interfaces or different budgets. None is presented here as a uniformly quality-approved SFT dataset.
+- `data/provenance` contains original summary hashes and release hashes. Raw files remain retained by the project owner. A hash is an identity commitment, not a substitute for availability or third-party verification.
+- No credentials, private hostnames, API request transcripts, human chat logs, autonomous-research-framework case study, or server access scripts are intentionally included.
+- Authorship/affiliation and any venue-specific AI-assistance disclosure must be finalized by the accountable human authors before submission. The internal review in `paper/review` is a simulated review aid, not official CVPR peer review or acceptance.

@@ -1,0 +1,52 @@
+{
+  "scope": "Original source summaries are retained privately; this public release is a curated export. Source hashes identify files, not proof of public raw-state replay.",
+  "sources": [
+    {
+      "source_id": "Piper_H200_SFT\u8bc4\u6d4b\u6700\u7ec8\u5bf9\u7167_20261018.json",
+      "source_sha256": "d20892e8284ec4dcab0bb08b2819f91555d3325564c4774f5e8dcc7fadc75548",
+      "source_bytes": 7464
+    },
+    {
+      "source_id": "Piper_\u914d\u5bf9\u8bc4\u6d4b\u63a5\u53e3\u4ea4\u63a5_20261018.json",
+      "source_sha256": "db962f649f0f7a4e0b163935fa4f5a4fb57174e71597bbcb648bec458ad6800f",
+      "source_bytes": 2534
+    },
+    {
+      "source_id": "Piper_\u516b\u5361SFT\u5b8c\u6210\u6838\u9a8c_20261018.json",
+      "source_sha256": "f67d0542b080d4a81fa76c5b3ee2c8afc12ac059d8e3a4524c284d5c8f66c633",
+      "source_bytes": 24163
+    },
+    {
+      "source_id": "G1_whole_sequence_report.json",
+      "source_sha256": "a5842797feefcd421c7dcb8de4647c976dc26071279a605ee67ea6a3ded36368",
+      "source_bytes": 50509
+    },
+    {
+      "source_id": "calibration_whole_sequence_report.json",
+      "source_sha256": "cd60073a51728cb205ebd31cbf1b769eef4da281a9d55769545795477b02e902",
+      "source_bytes": 51694
+    },
+    {
+      "source_id": "scientific_summary.json",
+      "source_sha256": "8e1ecbdd05e7a0a7f90e23a0ac6070b9990d49a203740f22b1d5b70c4ca92157",
+      "source_bytes": 207132
+    },
+    {
+      "source_id": "candidate_cadhull_v22_provenance.json",
+      "source_sha256": "84e561564479ba47e71798c5835a292afd1542b90fe985e917af443db2aeaa4e",
+      "source_bytes": 1791
+    },
+    {
+      "source_id": "summary.json",
+      "study": "feedback",
+      "source_sha256": "4c1d7ba34adb0dd13dbdb28cc487384f1376747543d74a5172b0400fcfe47b73",
+      "source_bytes": 8827
+    },
+    {
+      "source_id": "summary.json",
+      "study": "bounded_grasp_learning",
+      "source_sha256": "378e5dbdcccc670823107d94e36980ae44e3051310a8032c04ece1bef9c4a534",
+      "source_bytes": 151558
+    }
+  ]
+}

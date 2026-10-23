@@ -1,0 +1,54 @@
+{
+  "scope": "training schema audit; does not quantify causal effect on evaluation",
+  "training_interface": {
+    "rows": 1041,
+    "tool_calls": 15468,
+    "motion_mode_calls": 2476,
+    "motion_mode_episodes": 420,
+    "motion_modes": {
+      "grasp_center_radial": 2192,
+      "preserve_tcp": 284
+    },
+    "move_tool_schemas": [
+      {
+        "rows": 438,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "target_position": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "motion_mode": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "target_position"
+          ]
+        }
+      },
+      {
+        "rows": 603,
+        "schema": {
+          "type": "object",
+          "properties": {
+            "target_position": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            }
+          },
+          "required": [
+            "target_position"
+          ]
+        }
+      }
+    ]
+  },
+  "snapshot_status": "pair_alignment_required_before_sft_eval_restart",
+  "caveat": "This alignment snapshot predates final evaluation. Parameter prevalence is not evidence that mismatch caused a performance difference."
+}

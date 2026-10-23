@@ -1,0 +1,122 @@
+[
+  [
+    "C01",
+    "GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping",
+    2020,
+    "https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.html"
+  ],
+  [
+    "C02",
+    "SAPIEN: A SimulAted Part-Based Interactive ENvironment",
+    2020,
+    "https://openaccess.thecvf.com/content_CVPR_2020/html/Xiang_SAPIEN_A_SimulAted_Part-Based_Interactive_ENvironment_CVPR_2020_paper.html"
+  ],
+  [
+    "C03",
+    "GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts",
+    2023,
+    "https://openaccess.thecvf.com/content/CVPR2023/html/Geng_GAPartNet_Cross-Category_Domain-Generalizable_Object_Perception_and_Manipulation_via_Generalizable_and_CVPR_2023_paper.html"
+  ],
+  [
+    "C04",
+    "Generalizing 6-DoF Grasp Detection via Domain Prior Knowledge",
+    2024,
+    "https://openaccess.thecvf.com/content/CVPR2024/html/Ma_Generalizing_6-DoF_Grasp_Detection_via_Domain_Prior_Knowledge_CVPR_2024_paper.html"
+  ],
+  [
+    "C05",
+    "Do Better ImageNet Models Transfer Better?",
+    2019,
+    "https://openaccess.thecvf.com/content_CVPR_2019/html/Kornblith_Do_Better_ImageNet_Models_Transfer_Better_CVPR_2019_paper.html"
+  ],
+  [
+    "C06",
+    "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation",
+    2017,
+    "https://openaccess.thecvf.com/content_cvpr_2017/html/Qi_PointNet_Deep_Learning_CVPR_2017_paper.html"
+  ],
+  [
+    "C07",
+    "PointASNL: Robust Point Clouds Processing Using Nonlocal Neural Networks With Adaptive Sampling",
+    2020,
+    "https://openaccess.thecvf.com/content_CVPR_2020/html/Yan_PointASNL_Robust_Point_Clouds_Processing_Using_Nonlocal_Neural_Networks_With_CVPR_2020_paper.html"
+  ],
+  [
+    "C08",
+    "A Closer Look at Spatiotemporal Convolutions for Action Recognition",
+    2018,
+    "https://openaccess.thecvf.com/content_cvpr_2018/html/Tran_A_Closer_Look_CVPR_2018_paper.html"
+  ],
+  [
+    "C09",
+    "Making Better Mistakes: Leveraging Class Hierarchies With Deep Networks",
+    2020,
+    "https://openaccess.thecvf.com/content_CVPR_2020/html/Bertinetto_Making_Better_Mistakes_Leveraging_Class_Hierarchies_With_Deep_Networks_CVPR_2020_paper.html"
+  ],
+  [
+    "C10",
+    "ImageNet-E: Benchmarking Neural Network Robustness via Attribute Editing",
+    2023,
+    "https://openaccess.thecvf.com/content/CVPR2023/html/Li_ImageNet-E_Benchmarking_Neural_Network_Robustness_via_Attribute_Editing_CVPR_2023_paper.html"
+  ],
+  [
+    "E01",
+    "Deep Reinforcement Learning That Matters",
+    2018,
+    "https://ojs.aaai.org/index.php/AAAI/article/view/11694"
+  ],
+  [
+    "E02",
+    "Implementation Matters in Deep Policy Gradients: A Case Study on PPO and TRPO",
+    2020,
+    "https://arxiv.org/abs/2005.12729"
+  ],
+  [
+    "E03",
+    "A Closer Look at Deep Policy Gradients",
+    2020,
+    "https://arxiv.org/abs/1811.02553"
+  ],
+  [
+    "E04",
+    "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+    2021,
+    "https://arxiv.org/abs/2108.13264"
+  ],
+  [
+    "E05",
+    "Do ImageNet Classifiers Generalize to ImageNet?",
+    2019,
+    "https://proceedings.mlr.press/v97/recht19a.html"
+  ],
+  [
+    "E06",
+    "Underspecification Presents Challenges for Credibility in Modern Machine Learning",
+    2022,
+    "https://jmlr.org/papers/v23/20-1335.html"
+  ],
+  [
+    "E07",
+    "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations",
+    2019,
+    "https://proceedings.mlr.press/v97/locatello19a.html"
+  ],
+  [
+    "E08",
+    "Are GANs Created Equal? A Large-Scale Study",
+    2018,
+    "https://proceedings.neurips.cc/paper/2018/hash/e46de7e1bcaaced9a54f1e9d0d2f800d-Abstract.html"
+  ],
+  [
+    "E09",
+    "A Metric Learning Reality Check",
+    2020,
+    "https://arxiv.org/abs/2003.08505"
+  ],
+  [
+    "E10",
+    "A Step Toward Quantifying Independently Reproducible Machine Learning Research",
+    2019,
+    "https://proceedings.neurips.cc/paper_files/paper/2019/hash/c429429bf1f2af051f2021dc92a8ebea-Abstract.html"
+  ]
+]

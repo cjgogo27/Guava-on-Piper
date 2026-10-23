@@ -1,0 +1,20 @@
+{
+  "scope": "local operational held label, not full task success or causal attachment",
+  "rules": {
+    "B0": "grasp API accepted AND lift API accepted AND lift landed",
+    "B1": "B0 plus final gripper aperture >5mm",
+    "B2": "B0 plus >=25mm semantic center rise, valid C0/C1 each >=20 points with valid depth/mask; independent of aperture",
+    "H": "ordered conjunction of B1 and B2"
+  },
+  "reference_label": "actual target rise >=25mm continuously in final 0.3s, evaluated offline",
+  "contact_threshold_m": 0.002,
+  "contact_is_separate_from_held_label": true,
+  "safety_caveat": "2mm is an engineering diagnostic proxy, not a real-robot safety certification",
+  "audit_scope": "Raw MuJoCo integration-state forward recomputation, not re-integration of the dynamics",
+  "physical_integration_calls": 597275,
+  "state_rows_including_boundaries": 597383,
+  "statistics_independent_reproduction_passed": true,
+  "large_raw_not_in_this_release": true,
+  "posthoc_case_caveat": "Illustrations are posthoc examples, not causal ablations or frequency estimates",
+  "missingness": "Technical unknown -> all abstain; if B0 false -> negative; missing B1 width or B2 visual evidence -> abstain; H short-circuits a negative B1. Actual32/32 coverage for all methods."
+}

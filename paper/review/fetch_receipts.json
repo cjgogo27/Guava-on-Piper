@@ -1,0 +1,187 @@
+[
+  {
+    "id": "C01",
+    "title": "GraspNet-1Billion: A Large-Scale Benchmark for General Object Grasping",
+    "year": 2020,
+    "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.html",
+    "status": "fetched",
+    "bytes": 4921,
+    "sha256": "49d966f5f108f4e5650fc798f8bd8704d37435a3e147b682adff4c33e0ae2ad3",
+    "bibtex_extracted": true
+  },
+  {
+    "id": "C02",
+    "title": "SAPIEN: A SimulAted Part-Based Interactive ENvironment",
+    "year": 2020,
+    "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Xiang_SAPIEN_A_SimulAted_Part-Based_Interactive_ENvironment_CVPR_2020_paper.html",
+    "status": "fetched",
+    "bytes": 5697,
+    "sha256": "c87fc68cc41fb27fc429374c7091584f6901cb57b0d4ff8dbc302707bc145361",
+    "bibtex_extracted": true
+  },
+  {
+    "id": "C03",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Geng_GAPartNet_Cross-Category_Domain-Generalizable_Object_Perception_and_Manipulation_via_Generalizable_and_CVPR_2023_paper.html",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>"
+  },
+  {
+    "id": "C04",
+    "title": "Generalizing 6-DoF Grasp Detection via Domain Prior Knowledge",
+    "year": 2024,
+    "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Ma_Generalizing_6-DoF_Grasp_Detection_via_Domain_Prior_Knowledge_CVPR_2024_paper.html",
+    "status": "fetched",
+    "bytes": 6092,
+    "sha256": "c18365f50038ec451ea3c4eddcca2ae1f78a088336cb4aa71f41916488918963",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "C05",
+    "title": "Do Better ImageNet Models Transfer Better?",
+    "year": 2019,
+    "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Kornblith_Do_Better_ImageNet_Models_Transfer_Better_CVPR_2019_paper.html",
+    "status": "fetched",
+    "bytes": 4938,
+    "sha256": "8a0c0550515425ffcf75c1a1c62387c6420ec826a9d02860ed5d651f9bbb6b5f",
+    "bibtex_extracted": true
+  },
+  {
+    "id": "C06",
+    "title": "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation",
+    "year": 2017,
+    "url": "https://openaccess.thecvf.com/content_cvpr_2017/html/Qi_PointNet_Deep_Learning_CVPR_2017_paper.html",
+    "status": "fetched",
+    "bytes": 4676,
+    "sha256": "766e60bedcc376c04eb1497154bbbe9168bc8b0a7dafba92e1f1f21ea71342e0",
+    "bibtex_extracted": true
+  },
+  {
+    "id": "C07",
+    "title": "PointASNL: Robust Point Clouds Processing Using Nonlocal Neural Networks With Adaptive Sampling",
+    "year": 2020,
+    "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Yan_PointASNL_Robust_Point_Clouds_Processing_Using_Nonlocal_Neural_Networks_With_CVPR_2020_paper.html",
+    "status": "fetched",
+    "bytes": 5343,
+    "sha256": "581ad5f413d055cbdea7d2fdacb2d0cddb0e4a699af515179ec3db3723133106",
+    "bibtex_extracted": true
+  },
+  {
+    "id": "C08",
+    "title": "A Closer Look at Spatiotemporal Convolutions for Action Recognition",
+    "year": 2018,
+    "url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Tran_A_Closer_Look_CVPR_2018_paper.html",
+    "status": "fetched",
+    "bytes": 4525,
+    "sha256": "01aed08afe3bb4077b8c3f13ff98ad698ff2b31a737f781ef1b86a418b16cde2",
+    "bibtex_extracted": true
+  },
+  {
+    "id": "C09",
+    "title": "Making Better Mistakes: Leveraging Class Hierarchies With Deep Networks",
+    "year": 2020,
+    "url": "https://openaccess.thecvf.com/content_CVPR_2020/html/Bertinetto_Making_Better_Mistakes_Leveraging_Class_Hierarchies_With_Deep_Networks_CVPR_2020_paper.html",
+    "status": "fetched",
+    "bytes": 4872,
+    "sha256": "ab4abb07f106224bb6bcdc181ff5d2a569ca2fec663d54e652f9dc7047caa492",
+    "bibtex_extracted": true
+  },
+  {
+    "id": "C10",
+    "title": "ImageNet-E: Benchmarking Neural Network Robustness via Attribute Editing",
+    "year": 2023,
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Li_ImageNet-E_Benchmarking_Neural_Network_Robustness_via_Attribute_Editing_CVPR_2023_paper.html",
+    "status": "fetched",
+    "bytes": 6635,
+    "sha256": "7c29acc73a5629d08375371a875d0a5104ed59caafeb018227ef41b5a1b8eab8",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E01",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/11694",
+    "error": "'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte"
+  },
+  {
+    "id": "E02",
+    "title": "Implementation Matters in Deep Policy Gradients: A Case Study on PPO and TRPO",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2005.12729",
+    "status": "fetched",
+    "bytes": 43899,
+    "sha256": "e293a2717768fcbcf84f2cd76b3c2e55d145d4f2f8229a847e1cd720745abd49",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E03",
+    "title": "A Closer Look at Deep Policy Gradients",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/1811.02553",
+    "status": "fetched",
+    "bytes": 43809,
+    "sha256": "7a0e7dc3df1c7054a70470d4124189e1c93dc42fe728f8ff7ffe47551be01055",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E04",
+    "title": "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2108.13264",
+    "status": "fetched",
+    "bytes": 47542,
+    "sha256": "3079b33a2bd955029cd64b34f44a493bbc81700e6604a303ac2e070183cc5230",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E05",
+    "title": "Do ImageNet Classifiers Generalize to ImageNet?",
+    "year": 2019,
+    "url": "https://proceedings.mlr.press/v97/recht19a.html",
+    "status": "fetched",
+    "bytes": 14412,
+    "sha256": "27fd9af140eaf2cbdb1e3866151114d41f80aa541b7ccd928785036bad0a022a",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E06",
+    "title": "Underspecification Presents Challenges for Credibility in Modern Machine Learning",
+    "year": 2022,
+    "url": "https://jmlr.org/papers/v23/20-1335.html",
+    "status": "fetched",
+    "bytes": 8867,
+    "sha256": "61a3e78239d58fbae1f2dde71199f781744a618cc54de1eeef79cc99f348df4a",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E07",
+    "title": "Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations",
+    "year": 2019,
+    "url": "https://proceedings.mlr.press/v97/locatello19a.html",
+    "status": "fetched",
+    "bytes": 16998,
+    "sha256": "86c4560f5c0b59f2440e4300b0c61bbbe3ea10f04857120c3650961a2e0070fc",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E08",
+    "title": "Are GANs Created Equal? A Large-Scale Study",
+    "year": 2018,
+    "url": "https://proceedings.neurips.cc/paper/2018/hash/e46de7e1bcaaced9a54f1e9d0d2f800d-Abstract.html",
+    "status": "fetched",
+    "bytes": 9435,
+    "sha256": "5d2a181adb463852008f6659e6aa2e1ce246c9693f83c32ffdeeff0708acd16c",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E09",
+    "title": "A Metric Learning Reality Check",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2003.08505",
+    "status": "fetched",
+    "bytes": 40500,
+    "sha256": "22b3404b2de88c3c402f14190e5dcaa83343cc575198bfa982a553d8494ce632",
+    "bibtex_extracted": false
+  },
+  {
+    "id": "E10",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2019/hash/c429429bf1f2af051f2021dc92a8ebea-Abstract.html",
+    "error": "Remote end closed connection without response"
+  }
+]
